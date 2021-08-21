@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotaLeague", "DotaLeague\DotaLeague.csproj", "{2C0FEC56-E931-471C-B653-54ECA492C819}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{0E989C2F-68D2-4277-B6DC-B720EA4FF59D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{8CB3F793-BC28-441D-A398-96571B236020}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationServices", "ApplicationServices\ApplicationServices.csproj", "{93290DBE-B24D-4420-9305-A9C03AA4F1C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastracture", "Infrastracture", "{84452EBE-BC8A-4A27-9FDC-9C66D06BDBB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockDataAccess", "DataAccess\MockDataAccess.csproj", "{D68786FF-8A84-4F3A-937B-01CE55192AB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C0FEC56-E931-471C-B653-54ECA492C819}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C0FEC56-E931-471C-B653-54ECA492C819}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C0FEC56-E931-471C-B653-54ECA492C819}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C0FEC56-E931-471C-B653-54ECA492C819}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CB3F793-BC28-441D-A398-96571B236020}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CB3F793-BC28-441D-A398-96571B236020}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CB3F793-BC28-441D-A398-96571B236020}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CB3F793-BC28-441D-A398-96571B236020}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93290DBE-B24D-4420-9305-A9C03AA4F1C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93290DBE-B24D-4420-9305-A9C03AA4F1C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93290DBE-B24D-4420-9305-A9C03AA4F1C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93290DBE-B24D-4420-9305-A9C03AA4F1C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D68786FF-8A84-4F3A-937B-01CE55192AB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D68786FF-8A84-4F3A-937B-01CE55192AB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D68786FF-8A84-4F3A-937B-01CE55192AB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D68786FF-8A84-4F3A-937B-01CE55192AB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8CB3F793-BC28-441D-A398-96571B236020} = {0E989C2F-68D2-4277-B6DC-B720EA4FF59D}
+		{93290DBE-B24D-4420-9305-A9C03AA4F1C6} = {0E989C2F-68D2-4277-B6DC-B720EA4FF59D}
+		{84452EBE-BC8A-4A27-9FDC-9C66D06BDBB0} = {0E989C2F-68D2-4277-B6DC-B720EA4FF59D}
+		{D68786FF-8A84-4F3A-937B-01CE55192AB5} = {84452EBE-BC8A-4A27-9FDC-9C66D06BDBB0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B3EC8B93-B5F4-4C90-966F-D04332BEE774}
+	EndGlobalSection
+EndGlobal
