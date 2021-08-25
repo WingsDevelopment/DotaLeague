@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = SqlDataAccess
+build_property.ProjectDir = C:\Repos\Dota-League\DotaLeague\SqlDataAccess\

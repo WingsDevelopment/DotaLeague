@@ -1,0 +1,13 @@
+C:\Repos\Dota-League\DotaLeague\ApplicationServices\bin\Debug\netstandard2.1\ApplicationServices.deps.json
+C:\Repos\Dota-League\DotaLeague\ApplicationServices\bin\Debug\netstandard2.1\ApplicationServices.dll
+C:\Repos\Dota-League\DotaLeague\ApplicationServices\bin\Debug\netstandard2.1\ApplicationServices.pdb
+C:\Repos\Dota-League\DotaLeague\ApplicationServices\bin\Debug\netstandard2.1\Domain.dll
+C:\Repos\Dota-League\DotaLeague\ApplicationServices\bin\Debug\netstandard2.1\Domain.pdb
+C:\Repos\Dota-League\DotaLeague\ApplicationServices\obj\Debug\netstandard2.1\ApplicationServices.csproj.AssemblyReference.cache
+C:\Repos\Dota-League\DotaLeague\ApplicationServices\obj\Debug\netstandard2.1\ApplicationServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\Dota-League\DotaLeague\ApplicationServices\obj\Debug\netstandard2.1\ApplicationServices.AssemblyInfoInputs.cache
+C:\Repos\Dota-League\DotaLeague\ApplicationServices\obj\Debug\netstandard2.1\ApplicationServices.AssemblyInfo.cs
+C:\Repos\Dota-League\DotaLeague\ApplicationServices\obj\Debug\netstandard2.1\ApplicationServices.csproj.CoreCompileInputs.cache
+C:\Repos\Dota-League\DotaLeague\ApplicationServices\obj\Debug\netstandard2.1\ApplicationServices.csproj.CopyComplete
+C:\Repos\Dota-League\DotaLeague\ApplicationServices\obj\Debug\netstandard2.1\ApplicationServices.dll
+C:\Repos\Dota-League\DotaLeague\ApplicationServices\obj\Debug\netstandard2.1\ApplicationServices.pdb

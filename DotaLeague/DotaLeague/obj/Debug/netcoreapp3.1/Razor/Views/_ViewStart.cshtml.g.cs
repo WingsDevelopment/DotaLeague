@@ -26,8 +26,22 @@ using DotaLeague.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Repos\Dota-League\DotaLeague\DotaLeague\Views\_ViewImports.cshtml"
+using DotaLeague.Models.IdentityViewModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "C:\Repos\Dota-League\DotaLeague\DotaLeague\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7091c65830b0329e613be026ede8a57552863778", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5cf40411ad949bfd6c362b13ccf37d2ced61c579", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e6bed6ef801a4e0d77155500c2c263fcf76f2e78", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

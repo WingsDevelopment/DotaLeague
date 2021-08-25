@@ -8,9 +8,9 @@ namespace Domain.RepositoryInterfaces
     public interface IBaseRepository<TEntity> : IDisposable where TEntity : class
     {
         //CRUD
-        public Task<TEntity> Insert(TEntity entity);
-        public Task<TEntity> GetById(string id);
-        public Task<TEntity> Update(TEntity entity);
-        public Task<TEntity> Delete(string id);
+        public Task Insert(TEntity entity);
+        public Task<TEntity> GetById(object id);
+        public Task<bool> Update(TEntity entity);
+        public Task<bool> Delete(TEntity entity);
     }
 }

@@ -7,13 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotaLeague", "DotaLeague\Do
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{0E989C2F-68D2-4277-B6DC-B720EA4FF59D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{8CB3F793-BC28-441D-A398-96571B236020}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{8CB3F793-BC28-441D-A398-96571B236020}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationServices", "ApplicationServices\ApplicationServices.csproj", "{93290DBE-B24D-4420-9305-A9C03AA4F1C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationServices", "ApplicationServices\ApplicationServices.csproj", "{93290DBE-B24D-4420-9305-A9C03AA4F1C6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastracture", "Infrastracture", "{84452EBE-BC8A-4A27-9FDC-9C66D06BDBB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockDataAccess", "DataAccess\MockDataAccess.csproj", "{D68786FF-8A84-4F3A-937B-01CE55192AB5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MockDataAccess", "DataAccess\MockDataAccess.csproj", "{D68786FF-8A84-4F3A-937B-01CE55192AB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlDataAccess", "SqlDataAccess\SqlDataAccess.csproj", "{2C8A4434-4EDD-4ED4-928E-03791ED253E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{D68786FF-8A84-4F3A-937B-01CE55192AB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D68786FF-8A84-4F3A-937B-01CE55192AB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D68786FF-8A84-4F3A-937B-01CE55192AB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C8A4434-4EDD-4ED4-928E-03791ED253E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C8A4434-4EDD-4ED4-928E-03791ED253E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C8A4434-4EDD-4ED4-928E-03791ED253E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C8A4434-4EDD-4ED4-928E-03791ED253E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 		{93290DBE-B24D-4420-9305-A9C03AA4F1C6} = {0E989C2F-68D2-4277-B6DC-B720EA4FF59D}
 		{84452EBE-BC8A-4A27-9FDC-9C66D06BDBB0} = {0E989C2F-68D2-4277-B6DC-B720EA4FF59D}
 		{D68786FF-8A84-4F3A-937B-01CE55192AB5} = {84452EBE-BC8A-4A27-9FDC-9C66D06BDBB0}
+		{2C8A4434-4EDD-4ED4-928E-03791ED253E7} = {84452EBE-BC8A-4A27-9FDC-9C66D06BDBB0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B3EC8B93-B5F4-4C90-966F-D04332BEE774}

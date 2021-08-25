@@ -1,0 +1,5 @@
+C:\Repos\Dota-League\DotaLeague\DataAccess\obj\Debug\netstandard2.1\MockDataAccess.csproj.AssemblyReference.cache
+C:\Repos\Dota-League\DotaLeague\DataAccess\obj\Debug\netstandard2.1\MockDataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\Dota-League\DotaLeague\DataAccess\obj\Debug\netstandard2.1\MockDataAccess.AssemblyInfoInputs.cache
+C:\Repos\Dota-League\DotaLeague\DataAccess\obj\Debug\netstandard2.1\MockDataAccess.AssemblyInfo.cs
+C:\Repos\Dota-League\DotaLeague\DataAccess\obj\Debug\netstandard2.1\MockDataAccess.csproj.CoreCompileInputs.cache

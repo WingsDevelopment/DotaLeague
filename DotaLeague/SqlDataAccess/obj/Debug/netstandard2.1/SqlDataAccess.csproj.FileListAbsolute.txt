@@ -1,0 +1,13 @@
+C:\Repos\Dota-League\DotaLeague\SqlDataAccess\bin\Debug\netstandard2.1\SqlDataAccess.deps.json
+C:\Repos\Dota-League\DotaLeague\SqlDataAccess\bin\Debug\netstandard2.1\SqlDataAccess.dll
+C:\Repos\Dota-League\DotaLeague\SqlDataAccess\bin\Debug\netstandard2.1\SqlDataAccess.pdb
+C:\Repos\Dota-League\DotaLeague\SqlDataAccess\bin\Debug\netstandard2.1\Domain.dll
+C:\Repos\Dota-League\DotaLeague\SqlDataAccess\bin\Debug\netstandard2.1\Domain.pdb
+C:\Repos\Dota-League\DotaLeague\SqlDataAccess\obj\Debug\netstandard2.1\SqlDataAccess.csproj.AssemblyReference.cache
+C:\Repos\Dota-League\DotaLeague\SqlDataAccess\obj\Debug\netstandard2.1\SqlDataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\Dota-League\DotaLeague\SqlDataAccess\obj\Debug\netstandard2.1\SqlDataAccess.AssemblyInfoInputs.cache
+C:\Repos\Dota-League\DotaLeague\SqlDataAccess\obj\Debug\netstandard2.1\SqlDataAccess.AssemblyInfo.cs
+C:\Repos\Dota-League\DotaLeague\SqlDataAccess\obj\Debug\netstandard2.1\SqlDataAccess.csproj.CoreCompileInputs.cache
+C:\Repos\Dota-League\DotaLeague\SqlDataAccess\obj\Debug\netstandard2.1\SqlDataAccess.csproj.CopyComplete
+C:\Repos\Dota-League\DotaLeague\SqlDataAccess\obj\Debug\netstandard2.1\SqlDataAccess.dll
+C:\Repos\Dota-League\DotaLeague\SqlDataAccess\obj\Debug\netstandard2.1\SqlDataAccess.pdb

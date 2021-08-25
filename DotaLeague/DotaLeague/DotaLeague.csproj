@@ -18,11 +18,20 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ApplicationServices\ApplicationServices.csproj" />
+    <ProjectReference Include="..\SqlDataAccess\SqlDataAccess.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Update="wwwroot\assets\img\dotabg.jpg">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\IdentityViewModels\" />
   </ItemGroup>
 
 </Project>
