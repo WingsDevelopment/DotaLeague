@@ -1,5 +1,6 @@
-﻿using DotaLeague.Domain.Entities;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using DotaLeague.Domain.Entities;
 using SqlDataAccess.EntityConfigurations;
 using System;
 using System.Collections.Generic;
@@ -7,11 +8,11 @@ using System.Text;
 
 namespace SqlDataAccess.Contexts
 {
-    public class SqlDotaLeagueContext : DbContext
+    public class SqlDotaLeagueContext : IdentityDbContext
     {
         public DbSet<Match> Matches { get; set; }
         public DbSet<Report> Reports { get; set; }
-        public DbSet<User> Users { get; set; }
+        public DbSet<Player> Players { get; set; }
 
         public SqlDotaLeagueContext(DbContextOptions<SqlDotaLeagueContext> options)
             : base(options)
@@ -20,7 +21,7 @@ namespace SqlDataAccess.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration(new UserConfiguration());
+            modelBuilder.ApplyConfiguration(new PlayerConfiguration());
             modelBuilder.ApplyConfiguration(new MatchConfiguration());
             modelBuilder.ApplyConfiguration(new ReportConfiguration());
             modelBuilder.ApplyConfiguration(new LeagueConfiguration());

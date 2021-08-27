@@ -36,11 +36,12 @@ namespace DotaLeague
             services.AddDbContext<SqlDotaLeagueContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
+
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+                .AddEntityFrameworkStores<SqlDotaLeagueContext>();
 
             services.AddIdentity<IdentityUser, IdentityRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddEntityFrameworkStores<SqlDotaLeagueContext>()
                 .AddDefaultTokenProviders();
 
             services.Configure<IdentityOptions>(options =>
@@ -77,9 +78,7 @@ namespace DotaLeague
             });
 
             // Add application services.
-            services.AddTransient<IEmailSender, EmailSender>();
-
-            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IPlayerService, PlayerService>();
             services.AddScoped<IUserRepository, UserRepository>();
 
 

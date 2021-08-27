@@ -8,14 +8,14 @@ using System.Threading.Tasks;
 
 namespace SqlDataAccess.Repositories
 {
-    public class UserRepository : EfCoreBaseRepository<User>, IUserRepository
+    public class UserRepository : EfCoreBaseRepository<Player>, IUserRepository
     {
         public UserRepository(SqlDotaLeagueContext context) : base(context)
         {
 
         }
 
-        public Task<User> GetUserByEmail(string email)
+        public Task<Player> GetUserByEmail(string email)
         {
             throw new NotImplementedException();
         }

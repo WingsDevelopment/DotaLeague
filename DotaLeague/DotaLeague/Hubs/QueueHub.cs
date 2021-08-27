@@ -9,7 +9,7 @@ namespace DotaLeague.Hubs
 {
     public class QueueHub : Hub
     {
-        public async Task UserQueued(UserShortDTO userShortDTO)
+        public async Task UserQueued(PlayerShortDTO userShortDTO)
         {
             await Clients.All.SendAsync("UserQueued", userShortDTO);
         }
