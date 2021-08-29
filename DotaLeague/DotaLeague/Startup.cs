@@ -11,6 +11,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using SqlDataAccess;
 using SqlDataAccess.Contexts;
 using SqlDataAccess.Repositories;
 using System;
@@ -77,6 +78,7 @@ namespace DotaLeague
             });
 
             // Add application services.
+            services.AddScoped<IUnitOfWork, EfCoreUnitOfWork>();
             services.AddScoped<IPlayerService, PlayerService>();
             services.AddScoped<IUserRepository, UserRepository>();
 

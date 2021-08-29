@@ -26,7 +26,7 @@ namespace ApplicationServices
         /// <returns></returns>
         public async Task<PlayerDTO> CreateUser(string email)
         {
-            var data = _unitOfWork.UserRepository.GetUserByEmail(email);
+            var data = await _unitOfWork.UserRepository.GetUserByEmail(email);
             if (data != null) throw new PlayerAlreadyExistException();
 
             var player = new Player(email);

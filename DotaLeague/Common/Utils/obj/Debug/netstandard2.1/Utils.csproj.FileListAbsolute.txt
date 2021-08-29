@@ -1,0 +1,10 @@
+C:\Repos\DotaLeague\DotaLeague\Common\Utils\bin\Debug\netstandard2.1\Utils.deps.json
+C:\Repos\DotaLeague\DotaLeague\Common\Utils\bin\Debug\netstandard2.1\Utils.dll
+C:\Repos\DotaLeague\DotaLeague\Common\Utils\bin\Debug\netstandard2.1\Utils.pdb
+C:\Repos\DotaLeague\DotaLeague\Common\Utils\obj\Debug\netstandard2.1\Utils.csproj.AssemblyReference.cache
+C:\Repos\DotaLeague\DotaLeague\Common\Utils\obj\Debug\netstandard2.1\Utils.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\DotaLeague\DotaLeague\Common\Utils\obj\Debug\netstandard2.1\Utils.AssemblyInfoInputs.cache
+C:\Repos\DotaLeague\DotaLeague\Common\Utils\obj\Debug\netstandard2.1\Utils.AssemblyInfo.cs
+C:\Repos\DotaLeague\DotaLeague\Common\Utils\obj\Debug\netstandard2.1\Utils.csproj.CoreCompileInputs.cache
+C:\Repos\DotaLeague\DotaLeague\Common\Utils\obj\Debug\netstandard2.1\Utils.dll
+C:\Repos\DotaLeague\DotaLeague\Common\Utils\obj\Debug\netstandard2.1\Utils.pdb

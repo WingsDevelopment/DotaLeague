@@ -8,3 +8,13 @@ C:\Repos\Dota-League\DotaLeague\Domain\obj\Debug\netstandard2.1\Domain.csproj.Co
 C:\Repos\Dota-League\DotaLeague\Domain\obj\Debug\netstandard2.1\Domain.dll
 C:\Repos\Dota-League\DotaLeague\Domain\obj\Debug\netstandard2.1\Domain.pdb
 C:\Repos\Dota-League\DotaLeague\Domain\obj\Debug\netstandard2.1\Domain.csproj.AssemblyReference.cache
+C:\Repos\DotaLeague\DotaLeague\Domain\bin\Debug\netstandard2.1\Domain.deps.json
+C:\Repos\DotaLeague\DotaLeague\Domain\bin\Debug\netstandard2.1\Domain.dll
+C:\Repos\DotaLeague\DotaLeague\Domain\bin\Debug\netstandard2.1\Domain.pdb
+C:\Repos\DotaLeague\DotaLeague\Domain\obj\Debug\netstandard2.1\Domain.csproj.AssemblyReference.cache
+C:\Repos\DotaLeague\DotaLeague\Domain\obj\Debug\netstandard2.1\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\DotaLeague\DotaLeague\Domain\obj\Debug\netstandard2.1\Domain.AssemblyInfoInputs.cache
+C:\Repos\DotaLeague\DotaLeague\Domain\obj\Debug\netstandard2.1\Domain.AssemblyInfo.cs
+C:\Repos\DotaLeague\DotaLeague\Domain\obj\Debug\netstandard2.1\Domain.csproj.CoreCompileInputs.cache
+C:\Repos\DotaLeague\DotaLeague\Domain\obj\Debug\netstandard2.1\Domain.dll
+C:\Repos\DotaLeague\DotaLeague\Domain\obj\Debug\netstandard2.1\Domain.pdb

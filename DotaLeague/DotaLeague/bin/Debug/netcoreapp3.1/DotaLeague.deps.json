@@ -40,6 +40,7 @@
           "Microsoft.EntityFrameworkCore.Tools": "3.1.17",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.11.1",
           "SqlDataAccess": "1.0.0",
+          "Utils": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -1664,7 +1665,8 @@
       },
       "ApplicationServices/1.0.0": {
         "dependencies": {
-          "Domain": "1.0.0"
+          "Domain": "1.0.0",
+          "Utils": "1.0.0"
         },
         "runtime": {
           "ApplicationServices.dll": {}
@@ -1693,6 +1695,14 @@
         },
         "compile": {
           "SqlDataAccess.dll": {}
+        }
+      },
+      "Utils/1.0.0": {
+        "runtime": {
+          "Utils.dll": {}
+        },
+        "compile": {
+          "Utils.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -4105,6 +4115,11 @@
       "sha512": ""
     },
     "SqlDataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Utils/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

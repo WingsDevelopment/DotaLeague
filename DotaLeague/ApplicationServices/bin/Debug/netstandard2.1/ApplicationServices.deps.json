@@ -9,7 +9,8 @@
     ".NETStandard,Version=v2.1/": {
       "ApplicationServices/1.0.0": {
         "dependencies": {
-          "Domain": "1.0.0"
+          "Domain": "1.0.0",
+          "Utils": "1.0.0"
         },
         "runtime": {
           "ApplicationServices.dll": {}
@@ -18,6 +19,11 @@
       "Domain/1.0.0": {
         "runtime": {
           "Domain.dll": {}
+        }
+      },
+      "Utils/1.0.0": {
+        "runtime": {
+          "Utils.dll": {}
         }
       }
     }
@@ -29,6 +35,11 @@
       "sha512": ""
     },
     "Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Utils/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
