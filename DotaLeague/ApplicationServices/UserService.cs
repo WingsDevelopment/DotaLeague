@@ -16,7 +16,6 @@ namespace ApplicationServices
         {
             _userRepository = userRepository;
         }
-
         public Task<UserDTO> CreateUser(string email)
         {
             throw new NotImplementedException();
@@ -25,7 +24,6 @@ namespace ApplicationServices
         public Task<IEnumerable<UserDTO>> GetScoreBoard(int leagueId)
         {
             throw new NotImplementedException();
-
         }
 
         public Task<UserDTO> GetUserByEmail(int email)
