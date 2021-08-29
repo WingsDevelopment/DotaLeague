@@ -38,5 +38,25 @@ namespace MockDataAccess
         {
             throw new NotImplementedException();
         }
+
+        Task IBaseRepository<Report>.Insert(Report entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<Report> GetById(object id)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<bool> IBaseRepository<Report>.Update(Report entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> Delete(Report entity)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

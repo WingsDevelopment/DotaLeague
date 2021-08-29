@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ApplicationServices\ApplicationServices.csproj" />
+    <ProjectReference Include="..\Common\Utils\Utils.csproj" />
     <ProjectReference Include="..\SqlDataAccess\SqlDataAccess.csproj" />
   </ItemGroup>
 

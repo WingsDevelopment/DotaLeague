@@ -8,7 +8,7 @@ namespace DotaLeague.Domain.Entities
 {
     public class Player
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
         /// <summary>
         /// User's email
         /// </summary>
@@ -17,7 +17,6 @@ namespace DotaLeague.Domain.Entities
         /// User's password hash
         /// </summary>
         public string PasswordHash { get; set; }
-        public List<string> Roles { get; set; }
         public DateTime RegisteredAt { get; set; }
 
         public List<League> VouchedLeagues { get; set; }
@@ -31,6 +30,11 @@ namespace DotaLeague.Domain.Entities
         public Player()
         {
             RegisteredAt = DateTime.Now;
+        }
+        public Player(string email) : this()
+        {
+            //todo: implement seter za mail validaciju
+            Email = email;
         }
     }
 }

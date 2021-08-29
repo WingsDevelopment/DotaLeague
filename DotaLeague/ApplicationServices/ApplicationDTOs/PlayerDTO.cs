@@ -9,7 +9,7 @@ namespace ApplicationServices.ApplicationDTOs
 {
     public class PlayerDTO
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
         /// <summary>
         /// User's email
         /// </summary>
@@ -18,7 +18,6 @@ namespace ApplicationServices.ApplicationDTOs
         /// User's password hash
         /// </summary>
         public string PasswordHash { get; set; }
-        public List<string> Roles { get; set; }
         public DateTime RegisteredAt { get; set; }
 
         public List<LeagueDTO> VouchedLeagues { get; set; }
@@ -34,7 +33,6 @@ namespace ApplicationServices.ApplicationDTOs
             Id = user.Id;
             Email = user.Email;
             PasswordHash = user.PasswordHash;
-            Roles = user.Roles;
             RegisteredAt = user.RegisteredAt;
             SteamID = user.SteamID;
             TimeOutDateTime = user.TimeOutDateTime;

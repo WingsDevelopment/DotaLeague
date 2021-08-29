@@ -361,7 +361,6 @@ C:\Repos\Dota-League\DotaLeague\DotaLeague\obj\Debug\netcoreapp3.1\DotaLeague.Ge
 C:\Repos\Dota-League\DotaLeague\DotaLeague\obj\Debug\netcoreapp3.1\DotaLeague.AssemblyInfoInputs.cache
 C:\Repos\Dota-League\DotaLeague\DotaLeague\obj\Debug\netcoreapp3.1\DotaLeague.AssemblyInfo.cs
 C:\Repos\Dota-League\DotaLeague\DotaLeague\obj\Debug\netcoreapp3.1\DotaLeague.csproj.CoreCompileInputs.cache
-C:\Repos\Dota-League\DotaLeague\DotaLeague\obj\Debug\netcoreapp3.1\DotaLeague.MvcApplicationPartsAssemblyInfo.cs
 C:\Repos\Dota-League\DotaLeague\DotaLeague\obj\Debug\netcoreapp3.1\DotaLeague.MvcApplicationPartsAssemblyInfo.cache
 C:\Repos\Dota-League\DotaLeague\DotaLeague\obj\Debug\netcoreapp3.1\DotaLeague.RazorAssemblyInfo.cache
 C:\Repos\Dota-League\DotaLeague\DotaLeague\obj\Debug\netcoreapp3.1\DotaLeague.RazorAssemblyInfo.cs
@@ -408,3 +407,4 @@ C:\Repos\Dota-League\DotaLeague\DotaLeague\bin\Debug\netcoreapp3.1\ApplicationSe
 C:\Repos\Dota-League\DotaLeague\DotaLeague\bin\Debug\netcoreapp3.1\Domain.pdb
 C:\Repos\Dota-League\DotaLeague\DotaLeague\bin\Debug\netcoreapp3.1\SqlDataAccess.dll
 C:\Repos\Dota-League\DotaLeague\DotaLeague\bin\Debug\netcoreapp3.1\SqlDataAccess.pdb
+C:\Repos\Dota-League\DotaLeague\DotaLeague\obj\Debug\netcoreapp3.1\DotaLeague.MvcApplicationPartsAssemblyInfo.cs

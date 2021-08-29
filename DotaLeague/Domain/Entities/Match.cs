@@ -1,5 +1,4 @@
 ﻿using DotaLeague.Domain.Enums;
-using DotaLeague.Domain.ValueTypes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +8,7 @@ namespace DotaLeague.Domain.Entities
 {
     public class Match
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
         /// <summary>
         /// How much mmr will players win and lose
         /// </summary>
@@ -25,7 +24,7 @@ namespace DotaLeague.Domain.Entities
         /// <summary>
         /// Data gethered from dota bot - used for match history
         /// </summary>
-        public MatchData MatchData { get; set; }
+        //public MatchData MatchData { get; set; }
 
         public Match()
         {

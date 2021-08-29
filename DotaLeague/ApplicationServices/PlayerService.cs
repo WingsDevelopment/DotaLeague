@@ -1,25 +1,39 @@
 ﻿using ApplicationServices.ApplicationDTOs;
 using ApplicationServices.Interfaces;
 using Domain.RepositoryInterfaces;
+using DotaLeague.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using Utils.Exceptions;
 
 namespace ApplicationServices
 {
     public class PlayerService : IPlayerService
     {
-        private readonly IUserRepository _userRepository;
+        private readonly IUnitOfWork _unitOfWork;
 
-        public PlayerService(IUserRepository userRepository)
+        public PlayerService(IUnitOfWork unitOfWork)
         {
-            _userRepository = userRepository;
+            _unitOfWork = unitOfWork;
         }
 
-        public Task<PlayerDTO> CreateUser(string email)
+        /// <summary>
+        /// must throw PlayerAlreadyExistException if player exist
+        /// </summary>
+        /// <param name="email"></param>
+        /// <returns></returns>
+        public async Task<PlayerDTO> CreateUser(string email)
         {
-            throw new NotImplementedException();
+            var data = _unitOfWork.UserRepository.GetUserByEmail(email);
+            if (data != null) throw new PlayerAlreadyExistException();
+
+            var player = new Player(email);
+
+            await _unitOfWork.UserRepository.Insert(player);
+            await _unitOfWork.SaveChangesAsync();
+            return new PlayerDTO(player);
         }
 
         public Task<IEnumerable<PlayerDTO>> GetScoreBoard(int leagueId)

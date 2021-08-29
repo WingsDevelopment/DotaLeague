@@ -1739,7 +1739,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
-          "Domain": "1.0.0"
+          "Domain": "1.0.0",
+          "Utils": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ApplicationServices.dll": {}
@@ -1764,13 +1765,24 @@
         "dependencies": {
           "Domain": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.17",
-          "Microsoft.EntityFrameworkCore": "3.1.18"
+          "Microsoft.EntityFrameworkCore": "3.1.18",
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.17"
         },
         "compile": {
           "bin/placeholder/SqlDataAccess.dll": {}
         },
         "runtime": {
           "bin/placeholder/SqlDataAccess.dll": {}
+        }
+      },
+      "Utils/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Utils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Utils.dll": {}
         }
       }
     }
@@ -6277,6 +6289,11 @@
       "type": "project",
       "path": "../SqlDataAccess/SqlDataAccess.csproj",
       "msbuildProject": "../SqlDataAccess/SqlDataAccess.csproj"
+    },
+    "Utils/1.0.0": {
+      "type": "project",
+      "path": "../Common/Utils/Utils.csproj",
+      "msbuildProject": "../Common/Utils/Utils.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6289,7 +6306,8 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.17",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.17",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.11.1",
-      "SqlDataAccess >= 1.0.0"
+      "SqlDataAccess >= 1.0.0",
+      "Utils >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -6326,6 +6344,9 @@
           "projectReferences": {
             "C:\\Repos\\Dota-League\\DotaLeague\\ApplicationServices\\ApplicationServices.csproj": {
               "projectPath": "C:\\Repos\\Dota-League\\DotaLeague\\ApplicationServices\\ApplicationServices.csproj"
+            },
+            "C:\\Repos\\Dota-League\\DotaLeague\\Common\\Utils\\Utils.csproj": {
+              "projectPath": "C:\\Repos\\Dota-League\\DotaLeague\\Common\\Utils\\Utils.csproj"
             },
             "C:\\Repos\\Dota-League\\DotaLeague\\SqlDataAccess\\SqlDataAccess.csproj": {
               "projectPath": "C:\\Repos\\Dota-League\\DotaLeague\\SqlDataAccess\\SqlDataAccess.csproj"

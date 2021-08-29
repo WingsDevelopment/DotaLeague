@@ -11,6 +11,16 @@
         "runtime": {
           "bin/placeholder/Domain.dll": {}
         }
+      },
+      "Utils/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Utils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Utils.dll": {}
+        }
       }
     }
   },
@@ -19,11 +29,17 @@
       "type": "project",
       "path": "../Domain/Domain.csproj",
       "msbuildProject": "../Domain/Domain.csproj"
+    },
+    "Utils/1.0.0": {
+      "type": "project",
+      "path": "../Common/Utils/Utils.csproj",
+      "msbuildProject": "../Common/Utils/Utils.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.1": [
-      "Domain >= 1.0.0"
+      "Domain >= 1.0.0",
+      "Utils >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -58,6 +74,9 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "projectReferences": {
+            "C:\\Repos\\Dota-League\\DotaLeague\\Common\\Utils\\Utils.csproj": {
+              "projectPath": "C:\\Repos\\Dota-League\\DotaLeague\\Common\\Utils\\Utils.csproj"
+            },
             "C:\\Repos\\Dota-League\\DotaLeague\\Domain\\Domain.csproj": {
               "projectPath": "C:\\Repos\\Dota-League\\DotaLeague\\Domain\\Domain.csproj"
             }

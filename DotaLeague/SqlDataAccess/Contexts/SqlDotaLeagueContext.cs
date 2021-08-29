@@ -25,6 +25,8 @@ namespace SqlDataAccess.Contexts
             modelBuilder.ApplyConfiguration(new MatchConfiguration());
             modelBuilder.ApplyConfiguration(new ReportConfiguration());
             modelBuilder.ApplyConfiguration(new LeagueConfiguration());
+
+            base.OnModelCreating(modelBuilder);
         }
     }
 }

@@ -1,5 +1,9 @@
-C:\Repos\Dota-League\DotaLeague\InfraStructureServices\obj\Debug\netstandard2.1\InfraStructureServices.csproj.AssemblyReference.cache
 C:\Repos\Dota-League\DotaLeague\InfraStructureServices\obj\Debug\netstandard2.1\InfraStructureServices.GeneratedMSBuildEditorConfig.editorconfig
 C:\Repos\Dota-League\DotaLeague\InfraStructureServices\obj\Debug\netstandard2.1\InfraStructureServices.AssemblyInfoInputs.cache
 C:\Repos\Dota-League\DotaLeague\InfraStructureServices\obj\Debug\netstandard2.1\InfraStructureServices.AssemblyInfo.cs
 C:\Repos\Dota-League\DotaLeague\InfraStructureServices\obj\Debug\netstandard2.1\InfraStructureServices.csproj.CoreCompileInputs.cache
+C:\Repos\Dota-League\DotaLeague\InfraStructureServices\bin\Debug\netstandard2.1\InfraStructureServices.deps.json
+C:\Repos\Dota-League\DotaLeague\InfraStructureServices\bin\Debug\netstandard2.1\InfraStructureServices.dll
+C:\Repos\Dota-League\DotaLeague\InfraStructureServices\bin\Debug\netstandard2.1\InfraStructureServices.pdb
+C:\Repos\Dota-League\DotaLeague\InfraStructureServices\obj\Debug\netstandard2.1\InfraStructureServices.dll
+C:\Repos\Dota-League\DotaLeague\InfraStructureServices\obj\Debug\netstandard2.1\InfraStructureServices.pdb

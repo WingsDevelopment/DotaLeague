@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Domain.RepositoryInterfaces
 {
@@ -9,5 +10,6 @@ namespace Domain.RepositoryInterfaces
         IReportRepository ReportRepository { get; }
         IUserRepository UserRepository { get; }
         IMatchRepository MatchRepository { get; }
+        Task SaveChangesAsync();
     }
 }
