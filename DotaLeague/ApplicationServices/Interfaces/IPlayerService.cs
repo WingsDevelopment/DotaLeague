@@ -8,9 +8,9 @@ namespace ApplicationServices.Interfaces
 {
     public interface IPlayerService
     {
-        public Task<PlayerDTO> CreateUser(string email);
-        public Task<PlayerDTO> GetUserById(int id);
-        public Task<PlayerDTO> GetUserByEmail(int email);
+        public Task<PlayerDTO> CreatePlayer(string email);
+        public Task<PlayerDTO> GetPlayerById(int id);
+        public Task<PlayerDTO> GetPlayerByEmail(int email);
 
         /// <summary>
         /// MMR descending

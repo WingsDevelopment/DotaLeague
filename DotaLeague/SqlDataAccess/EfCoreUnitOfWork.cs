@@ -21,7 +21,7 @@ namespace SqlDataAccess
             _reportRepository ??
             (_reportRepository = new ReportRepository(Context));
 
-        public IUserRepository UserRepository =>
+        public IUserRepository PlayerRepository =>
             _userRepository ??
             (_userRepository = new UserRepository(Context));
 

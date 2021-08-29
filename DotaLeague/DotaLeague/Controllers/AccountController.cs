@@ -72,7 +72,7 @@ namespace WebClient.Controllers
                     _logger.LogInformation("User logged in.");
                     try
                     {
-                        await _userService.CreateUser(model.Email);
+                        await _userService.CreatePlayer(model.Email);
                     }
                     catch (PlayerAlreadyExistException e) 
                     {
@@ -238,7 +238,7 @@ namespace WebClient.Controllers
                 var result = await _userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
-                    await _userService.CreateUser(model.Email);
+                    await _userService.CreatePlayer(model.Email);
                     _logger.LogInformation("User created a new account with password.");
 
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
@@ -327,7 +327,7 @@ namespace WebClient.Controllers
                 var result = await _userManager.CreateAsync(user);
                 try
                 {
-                    await _userService.CreateUser(model.Email);
+                    await _userService.CreatePlayer(model.Email);
                 }
                 catch (PlayerAlreadyExistException e)
                 {

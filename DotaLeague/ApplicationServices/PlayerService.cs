@@ -24,14 +24,14 @@ namespace ApplicationServices
         /// </summary>
         /// <param name="email"></param>
         /// <returns></returns>
-        public async Task<PlayerDTO> CreateUser(string email)
+        public async Task<PlayerDTO> CreatePlayer(string email)
         {
-            var data = await _unitOfWork.UserRepository.GetUserByEmail(email);
+            var data = await _unitOfWork.PlayerRepository.GetUserByEmail(email);
             if (data != null) throw new PlayerAlreadyExistException();
 
             var player = new Player(email);
 
-            await _unitOfWork.UserRepository.Insert(player);
+            await _unitOfWork.PlayerRepository.Insert(player);
             await _unitOfWork.SaveChangesAsync();
             return new PlayerDTO(player);
         }
@@ -41,12 +41,12 @@ namespace ApplicationServices
             throw new NotImplementedException();
         }
 
-        public Task<PlayerDTO> GetUserByEmail(int email)
+        public Task<PlayerDTO> GetPlayerByEmail(int email)
         {
             throw new NotImplementedException();
         }
 
-        public Task<PlayerDTO> GetUserById(int id)
+        public Task<PlayerDTO> GetPlayerById(int id)
         {
             throw new NotImplementedException();
         }
