@@ -6317,11 +6317,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repos\\Dota-League\\DotaLeague\\DotaLeague\\DotaLeague.csproj",
+      "projectUniqueName": "C:\\Repos\\DotaLeague\\DotaLeague\\DotaLeague\\DotaLeague.csproj",
       "projectName": "DotaLeague",
-      "projectPath": "C:\\Repos\\Dota-League\\DotaLeague\\DotaLeague\\DotaLeague.csproj",
+      "projectPath": "C:\\Repos\\DotaLeague\\DotaLeague\\DotaLeague\\DotaLeague.csproj",
       "packagesPath": "C:\\Users\\Korisnik\\.nuget\\packages\\",
-      "outputPath": "C:\\Repos\\Dota-League\\DotaLeague\\DotaLeague\\obj\\",
+      "outputPath": "C:\\Repos\\DotaLeague\\DotaLeague\\DotaLeague\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -6342,14 +6342,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Repos\\Dota-League\\DotaLeague\\ApplicationServices\\ApplicationServices.csproj": {
-              "projectPath": "C:\\Repos\\Dota-League\\DotaLeague\\ApplicationServices\\ApplicationServices.csproj"
+            "C:\\Repos\\DotaLeague\\DotaLeague\\ApplicationServices\\ApplicationServices.csproj": {
+              "projectPath": "C:\\Repos\\DotaLeague\\DotaLeague\\ApplicationServices\\ApplicationServices.csproj"
             },
-            "C:\\Repos\\Dota-League\\DotaLeague\\Common\\Utils\\Utils.csproj": {
-              "projectPath": "C:\\Repos\\Dota-League\\DotaLeague\\Common\\Utils\\Utils.csproj"
+            "C:\\Repos\\DotaLeague\\DotaLeague\\Common\\Utils\\Utils.csproj": {
+              "projectPath": "C:\\Repos\\DotaLeague\\DotaLeague\\Common\\Utils\\Utils.csproj"
             },
-            "C:\\Repos\\Dota-League\\DotaLeague\\SqlDataAccess\\SqlDataAccess.csproj": {
-              "projectPath": "C:\\Repos\\Dota-League\\DotaLeague\\SqlDataAccess\\SqlDataAccess.csproj"
+            "C:\\Repos\\DotaLeague\\DotaLeague\\SqlDataAccess\\SqlDataAccess.csproj": {
+              "projectPath": "C:\\Repos\\DotaLeague\\DotaLeague\\SqlDataAccess\\SqlDataAccess.csproj"
             }
           }
         }

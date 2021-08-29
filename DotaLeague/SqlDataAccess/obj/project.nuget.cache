@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "54kXU6CGs6SbzGHlfHcjpDlI8ogXtvW24RUOJjxKCMCQGSrCgvVaFJi/x3uMnJMtJ5Nc1+Y+ZxfyOSgtiBk9aQ==",
+  "dgSpecHash": "01iCUL7+38bpUoAg771Hynl5IPz4oE7W+87bluLoF4K1Uu5JrZm/Y/ldSMOPK9rRjRokDCOaKYtf0xdQzJ3ENg==",
   "success": true,
-  "projectFilePath": "C:\\Repos\\Dota-League\\DotaLeague\\SqlDataAccess\\SqlDataAccess.csproj",
+  "projectFilePath": "C:\\Repos\\DotaLeague\\DotaLeague\\SqlDataAccess\\SqlDataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Korisnik\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.17\\microsoft.aspnetcore.cryptography.internal.3.1.17.nupkg.sha512",
     "C:\\Users\\Korisnik\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.17\\microsoft.aspnetcore.cryptography.keyderivation.3.1.17.nupkg.sha512",

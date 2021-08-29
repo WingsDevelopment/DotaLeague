@@ -25,6 +25,7 @@ namespace ApplicationServices
         public Task<IEnumerable<UserDTO>> GetScoreBoard(int leagueId)
         {
             throw new NotImplementedException();
+
         }
 
         public Task<UserDTO> GetUserByEmail(int email)

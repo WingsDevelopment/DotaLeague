@@ -49,11 +49,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repos\\Dota-League\\DotaLeague\\ApplicationServices\\ApplicationServices.csproj",
+      "projectUniqueName": "C:\\Repos\\DotaLeague\\DotaLeague\\ApplicationServices\\ApplicationServices.csproj",
       "projectName": "ApplicationServices",
-      "projectPath": "C:\\Repos\\Dota-League\\DotaLeague\\ApplicationServices\\ApplicationServices.csproj",
+      "projectPath": "C:\\Repos\\DotaLeague\\DotaLeague\\ApplicationServices\\ApplicationServices.csproj",
       "packagesPath": "C:\\Users\\Korisnik\\.nuget\\packages\\",
-      "outputPath": "C:\\Repos\\Dota-League\\DotaLeague\\ApplicationServices\\obj\\",
+      "outputPath": "C:\\Repos\\DotaLeague\\DotaLeague\\ApplicationServices\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -74,11 +74,11 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "projectReferences": {
-            "C:\\Repos\\Dota-League\\DotaLeague\\Common\\Utils\\Utils.csproj": {
-              "projectPath": "C:\\Repos\\Dota-League\\DotaLeague\\Common\\Utils\\Utils.csproj"
+            "C:\\Repos\\DotaLeague\\DotaLeague\\Common\\Utils\\Utils.csproj": {
+              "projectPath": "C:\\Repos\\DotaLeague\\DotaLeague\\Common\\Utils\\Utils.csproj"
             },
-            "C:\\Repos\\Dota-League\\DotaLeague\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Repos\\Dota-League\\DotaLeague\\Domain\\Domain.csproj"
+            "C:\\Repos\\DotaLeague\\DotaLeague\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Repos\\DotaLeague\\DotaLeague\\Domain\\Domain.csproj"
             }
           }
         }

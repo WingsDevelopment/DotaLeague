@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repos\\Dota-League\\DotaLeague\\Common\\Utils\\Utils.csproj",
+      "projectUniqueName": "C:\\Repos\\DotaLeague\\DotaLeague\\Common\\Utils\\Utils.csproj",
       "projectName": "Utils",
-      "projectPath": "C:\\Repos\\Dota-League\\DotaLeague\\Common\\Utils\\Utils.csproj",
+      "projectPath": "C:\\Repos\\DotaLeague\\DotaLeague\\Common\\Utils\\Utils.csproj",
       "packagesPath": "C:\\Users\\Korisnik\\.nuget\\packages\\",
-      "outputPath": "C:\\Repos\\Dota-League\\DotaLeague\\Common\\Utils\\obj\\",
+      "outputPath": "C:\\Repos\\DotaLeague\\DotaLeague\\Common\\Utils\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KdE9rZHE0GDqm58YyiDOBE3IFopVxqXG/Fd1vcp5/v6PgqrrxwbaRth9+U6dKQ1DrSSVVo+glGvk9NmzmDR0jA==",
+  "dgSpecHash": "ooTe4i70WcET+nrLx52Z2n9YAlaxNkiK0+lVmjzviCss4jZzTdnak75WyUWVEW6GVGssniRzJqgpMlp01zgYyQ==",
   "success": true,
-  "projectFilePath": "C:\\Repos\\Dota-League\\DotaLeague\\DotaLeague\\DotaLeague.csproj",
+  "projectFilePath": "C:\\Repos\\DotaLeague\\DotaLeague\\DotaLeague\\DotaLeague.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Korisnik\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.17\\microsoft.aspnetcore.cryptography.internal.3.1.17.nupkg.sha512",
     "C:\\Users\\Korisnik\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.17\\microsoft.aspnetcore.cryptography.keyderivation.3.1.17.nupkg.sha512",

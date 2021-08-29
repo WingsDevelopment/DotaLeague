@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aWPfGFVxvLjiUzQ6X2+XPmArwHD31l9/A89BfjDopCQeBYsCpwoxsCWDbj/8K7U2xKRxPTX7qu4GgqoVEvDKaQ==",
+  "dgSpecHash": "9zAYJshxdPpOHRM7MAQfPRjPB8NVzsO2UvLgkoZZu8UwVBk+w9DMhJu8hRfLy01SzuiLRnb1zfiKFA3nRfLKdQ==",
   "success": true,
-  "projectFilePath": "C:\\Repos\\Dota-League\\DotaLeague\\Common\\Utils\\Utils.csproj",
+  "projectFilePath": "C:\\Repos\\DotaLeague\\DotaLeague\\Common\\Utils\\Utils.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

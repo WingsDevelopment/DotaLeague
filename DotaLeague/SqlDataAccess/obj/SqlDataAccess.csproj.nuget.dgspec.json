@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Repos\\Dota-League\\DotaLeague\\SqlDataAccess\\SqlDataAccess.csproj": {}
+    "C:\\Repos\\DotaLeague\\DotaLeague\\SqlDataAccess\\SqlDataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Repos\\Dota-League\\DotaLeague\\Domain\\Domain.csproj": {
+    "C:\\Repos\\DotaLeague\\DotaLeague\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repos\\Dota-League\\DotaLeague\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Repos\\DotaLeague\\DotaLeague\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Repos\\Dota-League\\DotaLeague\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Repos\\DotaLeague\\DotaLeague\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Korisnik\\.nuget\\packages\\",
-        "outputPath": "C:\\Repos\\Dota-League\\DotaLeague\\Domain\\obj\\",
+        "outputPath": "C:\\Repos\\DotaLeague\\DotaLeague\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -62,14 +62,14 @@
         }
       }
     },
-    "C:\\Repos\\Dota-League\\DotaLeague\\SqlDataAccess\\SqlDataAccess.csproj": {
+    "C:\\Repos\\DotaLeague\\DotaLeague\\SqlDataAccess\\SqlDataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repos\\Dota-League\\DotaLeague\\SqlDataAccess\\SqlDataAccess.csproj",
+        "projectUniqueName": "C:\\Repos\\DotaLeague\\DotaLeague\\SqlDataAccess\\SqlDataAccess.csproj",
         "projectName": "SqlDataAccess",
-        "projectPath": "C:\\Repos\\Dota-League\\DotaLeague\\SqlDataAccess\\SqlDataAccess.csproj",
+        "projectPath": "C:\\Repos\\DotaLeague\\DotaLeague\\SqlDataAccess\\SqlDataAccess.csproj",
         "packagesPath": "C:\\Users\\Korisnik\\.nuget\\packages\\",
-        "outputPath": "C:\\Repos\\Dota-League\\DotaLeague\\SqlDataAccess\\obj\\",
+        "outputPath": "C:\\Repos\\DotaLeague\\DotaLeague\\SqlDataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -90,8 +90,8 @@
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Repos\\Dota-League\\DotaLeague\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Repos\\Dota-League\\DotaLeague\\Domain\\Domain.csproj"
+              "C:\\Repos\\DotaLeague\\DotaLeague\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Repos\\DotaLeague\\DotaLeague\\Domain\\Domain.csproj"
               }
             }
           }
