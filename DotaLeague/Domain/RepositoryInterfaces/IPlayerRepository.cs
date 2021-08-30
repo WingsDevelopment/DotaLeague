@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Domain.RepositoryInterfaces
 {
-    public interface IUserRepository : IBaseRepository<Player>
+    public interface IPlayerRepository : IBaseRepository<Player>
     {
-        public Task<Player> GetUserByEmail(string email);
+        public Task<Player> GetPlayerByEmail(string email);
     }
 }

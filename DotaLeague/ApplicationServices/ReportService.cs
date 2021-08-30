@@ -12,9 +12,9 @@ namespace ApplicationServices
     public class ReportService
     {
         private readonly IReportRepository _reportRepository;
-        private readonly IUserRepository _userRepository;
+        private readonly IPlayerRepository _userRepository;
 
-        public ReportService(IReportRepository reportRepository, IUserRepository userRepository)
+        public ReportService(IReportRepository reportRepository, IPlayerRepository userRepository)
         {
             _reportRepository = reportRepository;
             _userRepository = userRepository;
@@ -27,7 +27,7 @@ namespace ApplicationServices
         /// <returns></returns>
         public async Task<ReportDTO> CreateReport(ReportCreateParamsDTO createParams)
         {
-            var user = await _userRepository.GetUserByEmail(createParams.UserEmail);
+            var user = await _userRepository.GetPlayerByEmail(createParams.UserEmail);
             if (user == null) throw new ReportServiceException($"User: {createParams.UserEmail} is not found.");
 
             var report = new Report(user.Id, createParams.Content);

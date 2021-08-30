@@ -10,14 +10,14 @@ using System.Threading.Tasks;
 
 namespace SqlDataAccess.Repositories
 {
-    public class UserRepository : EfCoreBaseRepository<Player>, IUserRepository
+    public class PlayerRepository : EfCoreBaseRepository<Player>, IPlayerRepository
     {
-        public UserRepository(SqlDotaLeagueContext context) : base(context)
+        public PlayerRepository(SqlDotaLeagueContext context) : base(context)
         {
 
         }
 
-        public Task<Player> GetUserByEmail(string email)
+        public Task<Player> GetPlayerByEmail(string email)
         {
             var result = DbSet.Where(p => p.Email.ToLower().Equals(email.ToLower()));
 

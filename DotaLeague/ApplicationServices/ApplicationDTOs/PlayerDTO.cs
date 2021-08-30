@@ -20,7 +20,7 @@ namespace ApplicationServices.ApplicationDTOs
         public string PasswordHash { get; set; }
         public DateTime RegisteredAt { get; set; }
 
-        public List<LeagueDTO> VouchedLeagues { get; set; }
+        public int VouchedLeague { get; set; }
         public string SteamID { get; set; }
         public DateTime TimeOutDateTime { get; set; }
         public bool IsBanned { get; set; }
@@ -32,14 +32,13 @@ namespace ApplicationServices.ApplicationDTOs
         {
             Id = user.Id;
             Email = user.Email;
-            PasswordHash = user.PasswordHash;
             RegisteredAt = user.RegisteredAt;
             SteamID = user.SteamID;
             TimeOutDateTime = user.TimeOutDateTime;
             Likes = user.Likes;
             Dislikes = user.Dislikes;
 
-            VouchedLeagues = user.VouchedLeagues?.ToLeagueDTOs()?.ToList();
+            VouchedLeague = user.VouchedLeague;
             Reports = user.Reports?.ToReportDTOs()?.ToList();
         }
     }

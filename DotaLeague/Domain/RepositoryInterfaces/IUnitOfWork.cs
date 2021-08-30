@@ -8,7 +8,7 @@ namespace Domain.RepositoryInterfaces
     public interface IUnitOfWork : IDisposable
     {
         IReportRepository ReportRepository { get; }
-        IUserRepository PlayerRepository { get; }
+        IPlayerRepository PlayerRepository { get; }
         IMatchRepository MatchRepository { get; }
         ILeagueRepository LeagueRepository { get; }
         Task SaveChangesAsync();

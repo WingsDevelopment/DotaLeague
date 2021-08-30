@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SqlDataAccess.Contexts;
 
 namespace SqlDataAccess.Migrations
 {
     [DbContext(typeof(SqlDotaLeagueContext))]
-    partial class SqlDotaLeagueContextModelSnapshot : ModelSnapshot
+    [Migration("20210830214707_Added_Minor_Changes_To_Models")]
+    partial class Added_Minor_Changes_To_Models
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

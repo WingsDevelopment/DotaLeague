@@ -1,9 +1,9 @@
 ﻿//init
-var NOTIFICATION_HOST = "https://localhost:44301/hubs/queueHub";
-//var NOTIFICATION_HOST = "https://proddomain/hubs/queueHub";
+var NOTIFICATION_HOST = "https://localhost:44301/queueHub";
+//var NOTIFICATION_HOST = "https://proddomain/queueHub";
 
 var notificationSizeElement = document.getElementById("notification-size");
-var notificationAudio = new Audio("/media/notif.mp3");
+var notificationAudio = new Audio("/assets/media/ding.mp3");
 notificationAudio.load();
 
 //SignalR

@@ -13,19 +13,15 @@ namespace DotaLeague.Domain.Entities
         /// User's email
         /// </summary>
         public string Email { get; set; }
-        /// <summary>
-        /// User's password hash
-        /// </summary>
-        public string PasswordHash { get; set; }
-        public DateTime RegisteredAt { get; set; }
-
-        public int VouchedLeague { get; set; }
-        public List<Report> Reports { get; set; }
-        public DateTime TimeOutDateTime { get; set; }
+        public int MMR { get; set; }
         public string SteamID { get; set; }
-        public bool IsBanned { get; set; }
+        public DateTime RegisteredAt { get; set; }
+        public int VouchedLeague { get; set; }
         public int Likes { get; set; }
         public int Dislikes { get; set; }
+        public bool IsBanned { get; set; }
+        public DateTime TimeOutDateTime { get; set; }
+        public List<Report> Reports { get; set; }
 
         public Player()
         {

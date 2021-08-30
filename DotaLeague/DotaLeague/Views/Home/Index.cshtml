@@ -98,10 +98,29 @@
                 </div>
 
                 <div class="card-footer text-center">
-                    <button class="btn  btn-info">Join Queue</button>
+                    <button class="btn  btn-info" onclick="JoinQueue()">Join Queue</button>
                     <button class="btn  btn-warning">Leave Queue</button>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    function JoinQueue() {
+        $.ajax({
+            type: "GET",
+            url: "/Home/Queue",
+            data: { "leagueId": 1 },
+            contentType: "application/json",
+
+            success: function (data) {
+                console.log("opp op");
+                console.log(data);
+            },
+            error: function (xhr) {
+                console.log(xhr);
+            }
+        });
+    }
+</script>

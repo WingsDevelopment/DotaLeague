@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cdKbpRhwgvXG+a35ckfF592dJHDDFOcTWX39GU0BpPjA9Dhkw9ljpU8tOT639qUO8D2kIZl28m+eO1o6nsyhOw==",
+  "dgSpecHash": "/JpDBHxJVvU8YW1wDY6HOL/2aOByeaaD/l+a5GwIV7TO9l/bZyKlY+IiRJSLLSqZktAbi1zb3m5E5syRHyZ3/A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bansc\\repositories\\DotaLeague\\DotaLeague\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Repos\\DotaLeague\\DotaLeague\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

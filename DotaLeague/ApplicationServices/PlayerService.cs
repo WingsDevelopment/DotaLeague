@@ -19,18 +19,21 @@ namespace ApplicationServices
             _unitOfWork = unitOfWork;
         }
 
-        public async Task<PlayerDTO> Queue(string email, int leagueId)
+        public async Task<PlayerShortDTO> Queue(string email, int leagueId)
         {
-            var player = await _unitOfWork.PlayerRepository.GetUserByEmail(email);
+            var player = await _unitOfWork.PlayerRepository.GetPlayerByEmail(email);
             if (player == null) throw new ArgumentException();
 
-            var league = await _unitOfWork.LeagueRepository.GetById(leagueId);
-            if (league == null) throw new ArgumentException();
+            //todo: dodati lige
+            //var league = await _unitOfWork.LeagueRepository.GetById(leagueId);
+            //if (league == null) throw new ArgumentException();
 
-            if (String.IsNullOrWhiteSpace(player.SteamID)) throw new InvalidSteamIDException();
-            if (player.VouchedLeague != league.Id) throw new NotVouchedException();
+            //if (String.IsNullOrWhiteSpace(player.SteamID)) throw new InvalidSteamIDException();
+            //if (player.VouchedLeague != league.Id) throw new NotVouchedException();
 
-            return new PlayerDTO(player);
+            //todo: smisliti kako voditi count i startovati match!
+
+            return new PlayerShortDTO(player);
         }
 
         /// <summary>
@@ -40,7 +43,7 @@ namespace ApplicationServices
         /// <returns></returns>
         public async Task<PlayerDTO> CreatePlayer(string email)
         {
-            var data = await _unitOfWork.PlayerRepository.GetUserByEmail(email);
+            var data = await _unitOfWork.PlayerRepository.GetPlayerByEmail(email);
             if (data != null) throw new PlayerAlreadyExistException();
 
             var player = new Player(email);

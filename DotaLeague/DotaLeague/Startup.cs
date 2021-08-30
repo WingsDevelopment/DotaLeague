@@ -83,7 +83,7 @@ namespace DotaLeague
             // Add application services.
             services.AddScoped<IUnitOfWork, EfCoreUnitOfWork>();
             services.AddScoped<IPlayerService, PlayerService>();
-            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IPlayerRepository, PlayerRepository>();
 
 
             services.AddControllersWithViews();
@@ -118,9 +118,9 @@ namespace DotaLeague
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-                endpoints.MapHub<QueueHub>("/queueHub");
-
                 endpoints.MapRazorPages();
+
+                endpoints.MapHub<QueueHub>("/queueHub");
             });
 
             CreateRolesAndDefaultUsers(serviceProvider);

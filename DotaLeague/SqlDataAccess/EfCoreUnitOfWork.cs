@@ -14,20 +14,25 @@ namespace SqlDataAccess
         private readonly SqlDotaLeagueContext Context;
 
         private IReportRepository _reportRepository;
-        private IUserRepository _userRepository;
+        private IPlayerRepository _userRepository;
         private IMatchRepository _matchRepository;
+        private ILeagueRepository _leagueRepository;
 
         public IReportRepository ReportRepository =>
             _reportRepository ??
             (_reportRepository = new ReportRepository(Context));
 
-        public IUserRepository PlayerRepository =>
+        public IPlayerRepository PlayerRepository =>
             _userRepository ??
-            (_userRepository = new UserRepository(Context));
+            (_userRepository = new PlayerRepository(Context));
 
         public IMatchRepository MatchRepository =>
             _matchRepository ??
             (_matchRepository = new MatchRepository(Context));
+
+        public ILeagueRepository LeagueRepository =>
+            _leagueRepository ??
+            (_leagueRepository = new LeagueRepository(Context));
 
         public EfCoreUnitOfWork(SqlDotaLeagueContext context)
         {
