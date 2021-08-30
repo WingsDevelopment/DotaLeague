@@ -35,13 +35,23 @@ namespace DotaLeague.Controllers
 
         [Authorize]
         [HttpGet]
-        public IActionResult Queue()
+        public async Task<IActionResult> Queue(int leagueId)
         {
-            var user = User.Identity.Name;
+            try
+            {
+                var user = User.Identity.Name;
 
-            var playerDTO = _playerService.Queue(user);
+                var playerDTO = await _playerService.Queue(user, leagueId);
 
-            _hubContext.Clients.All.UserQueued(playerDTO);
+                await _hubContext.Clients.All.UserQueued(playerDTO);
+
+                return Ok();
+            }
+            catch(Exception e) 
+            {
+                //todo: error handling
+                return Error();
+            }
         }
 
         public IActionResult Privacy()

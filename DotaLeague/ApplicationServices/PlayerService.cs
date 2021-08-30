@@ -28,7 +28,7 @@ namespace ApplicationServices
             if (league == null) throw new ArgumentException();
 
             if (String.IsNullOrWhiteSpace(player.SteamID)) throw new InvalidSteamIDException();
-
+            if (player.VouchedLeague != league.Id) throw new NotVouchedException();
 
             return new PlayerDTO(player);
         }
