@@ -17,7 +17,6 @@ namespace ApplicationServices.Interfaces
         /// </summary>
         /// <returns></returns>
         public Task<IEnumerable<PlayerDTO>> GetScoreBoard(int leagueId);
-
-
+        public Task<PlayerDTO> Queue(string email);
     }
 }

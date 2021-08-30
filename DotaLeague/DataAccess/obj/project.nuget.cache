@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "u4nMlZgP/m8TbkGxhGbWHV/69RMy+pGvLMwPM6UEZNaq7tquVVj0Wf5GCPL/iGv0C8bDt/BGUJy6CzJM03N91g==",
+  "dgSpecHash": "KA9B7Co6iS2nPm8OUbM5XG4ixw3f1eBae3S/1CVtlPQIU2Ya1rVmnTKs0Ht+E6DwKAvG3WlB81DSZkKiD92qEg==",
   "success": true,
-  "projectFilePath": "C:\\Repos\\DotaLeague\\DotaLeague\\DataAccess\\MockDataAccess.csproj",
+  "projectFilePath": "C:\\Users\\bansc\\repositories\\DotaLeague\\DotaLeague\\DataAccess\\MockDataAccess.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

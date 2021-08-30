@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace DotaLeague.Hubs
 {
-    public class QueueHub : Hub
+    public class QueueHub : Hub<IQueueHub>
     {
-        public async Task UserQueued(PlayerShortDTO userShortDTO)
-        {
-            await Clients.All.SendAsync("UserQueued", userShortDTO);
-        }
+        //public async Task UserQueued(PlayerShortDTO userShortDTO)
+        //{
+        //    await Clients.All.SendAsync("UserQueued", userShortDTO);
+        //}
     }
 }

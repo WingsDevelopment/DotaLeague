@@ -19,7 +19,7 @@ namespace DotaLeague.Domain.Entities
         public string PasswordHash { get; set; }
         public DateTime RegisteredAt { get; set; }
 
-        public List<League> VouchedLeagues { get; set; }
+        public List<PlayerLeague> VouchedLeagues { get; set; }
         public List<Report> Reports { get; set; }
         public DateTime TimeOutDateTime { get; set; }
         public string SteamID { get; set; }

@@ -5,6 +5,7 @@ using SqlDataAccess.EntityConfigurations;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Domain.Entities;
 
 namespace SqlDataAccess.Contexts
 {
@@ -13,6 +14,7 @@ namespace SqlDataAccess.Contexts
         public DbSet<Match> Matches { get; set; }
         public DbSet<Report> Reports { get; set; }
         public DbSet<Player> Players { get; set; }
+        public DbSet<League> Leagues { get; set; }
 
         public SqlDotaLeagueContext(DbContextOptions<SqlDotaLeagueContext> options)
             : base(options)

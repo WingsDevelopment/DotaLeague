@@ -1,6 +1,7 @@
 using ApplicationServices;
 using ApplicationServices.Interfaces;
 using Domain.RepositoryInterfaces;
+using DotaLeague.Hubs;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -33,6 +34,8 @@ namespace DotaLeague
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSignalR();
+
             services.AddDbContext<SqlDotaLeagueContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
@@ -88,7 +91,7 @@ namespace DotaLeague
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IServiceProvider serviceProvider)
         {
             if (env.IsDevelopment())
             {
@@ -114,8 +117,53 @@ namespace DotaLeague
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+                endpoints.MapHub<QueueHub>("/queueHub");
+
                 endpoints.MapRazorPages();
             });
+
+            CreateRolesAndDefaultUsers(serviceProvider);
+        }
+        private void CreateRolesAndDefaultUsers(IServiceProvider serviceProvider)
+        {
+            //initializing custom roles 
+            var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+            var userManager = serviceProvider.GetRequiredService<UserManager<IdentityUser>>();
+            Task<IdentityResult> roleResult;
+            string email = "cedica@admin.com";
+
+            //Check that there is an Administrator role and create if not
+            Task<bool> hasAdminRole = roleManager.RoleExistsAsync("Administrator");
+            hasAdminRole.Wait();
+
+            if (!hasAdminRole.Result)
+            {
+                roleResult = roleManager.CreateAsync(new IdentityRole("Administrator"));
+                roleResult.Wait();
+            }
+
+            //Check if the admin user exists and create it if not
+            //Add to the Administrator role
+
+            Task<IdentityUser> administratorUser = userManager.FindByEmailAsync(email);
+            administratorUser.Wait();
+
+            if (administratorUser.Result == null)
+            {
+                IdentityUser administrator = new IdentityUser();
+                administrator.Email = email;
+                administrator.UserName = email;
+
+                Task<IdentityResult> newUser = userManager.CreateAsync(administrator, "ASDqwe123");
+                newUser.Wait();
+
+                if (newUser.Result.Succeeded)
+                {
+                    Task<IdentityResult> newUserRole = userManager.AddToRoleAsync(administrator, "Administrator");
+                    newUserRole.Wait();
+                }
+            }
         }
     }
 }

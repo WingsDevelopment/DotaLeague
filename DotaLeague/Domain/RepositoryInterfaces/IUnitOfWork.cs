@@ -10,6 +10,7 @@ namespace Domain.RepositoryInterfaces
         IReportRepository ReportRepository { get; }
         IUserRepository PlayerRepository { get; }
         IMatchRepository MatchRepository { get; }
+        ILeagueRepository LeagueRepository { get; }
         Task SaveChangesAsync();
     }
 }

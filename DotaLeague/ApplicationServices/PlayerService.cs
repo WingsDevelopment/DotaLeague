@@ -19,6 +19,20 @@ namespace ApplicationServices
             _unitOfWork = unitOfWork;
         }
 
+        public async Task<PlayerDTO> Queue(string email, int leagueId)
+        {
+            var player = await _unitOfWork.PlayerRepository.GetUserByEmail(email);
+            if (player == null) throw new ArgumentException();
+
+            var league = await _unitOfWork.LeagueRepository.GetById(leagueId);
+            if (league == null) throw new ArgumentException();
+
+            if (String.IsNullOrWhiteSpace(player.SteamID)) throw new InvalidSteamIDException();
+
+
+            return new PlayerDTO(player);
+        }
+
         /// <summary>
         /// must throw PlayerAlreadyExistException if player exist
         /// </summary>
