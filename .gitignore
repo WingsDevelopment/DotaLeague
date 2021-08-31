@@ -10,3 +10,5 @@ DotaLeague/.vs/DotaLeague/v16/.suo
 *.json
 *.cache
 *.v2
+*.props
+*.cache
