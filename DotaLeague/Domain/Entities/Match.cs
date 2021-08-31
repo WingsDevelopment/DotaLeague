@@ -26,13 +26,9 @@ namespace DotaLeague.Domain.Entities
         /// Data gethered from dota bot - used for match history
         /// </summary>
         //public MatchData MatchData { get; set; }
+        //todo: add player ids
 
         public Match()
-        {
-
-        }
-
-        public Match(IEnumerable<PlayerShort> players)
         {
 
         }

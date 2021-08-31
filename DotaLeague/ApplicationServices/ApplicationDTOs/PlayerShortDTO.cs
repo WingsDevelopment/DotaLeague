@@ -2,6 +2,7 @@
 using DotaLeague.Domain.Entities;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace ApplicationServices.ApplicationDTOs
@@ -15,6 +16,7 @@ namespace ApplicationServices.ApplicationDTOs
         public int MMR { get; set; }
         public string SteamID { get; set; }
         public int NumberOfMatches { get; set; }
+        public int VouchedLeague { get; set; }
 
         public int Pos1PriorityValue { get; set; }
         public int Pos2PriorityValue { get; set; }
@@ -31,6 +33,7 @@ namespace ApplicationServices.ApplicationDTOs
             MMR = player.MMR;
             SteamID = player.SteamID;
             NumberOfMatches = player.NumberOfMatches;
+            VouchedLeague = player.VouchedLeague;
 
             Pos1PriorityValue = player.Pos1PriorityValue;
             Pos2PriorityValue = player.Pos2PriorityValue;
@@ -47,12 +50,21 @@ namespace ApplicationServices.ApplicationDTOs
             WinRate = player.WinRate;
             MMR = player.MMR;
             SteamID = player.SteamID;
+            VouchedLeague = player.VouchedLeague;
 
             Pos1PriorityValue = player.Pos1PriorityValue;
             Pos2PriorityValue = player.Pos2PriorityValue;
             Pos3PriorityValue = player.Pos3PriorityValue;
             Pos4PriorityValue = player.Pos4PriorityValue;
             Pos5PriorityValue = player.Pos5PriorityValue;
+        }
+    }
+    public static class PlayerShortDTOExtension
+    {
+        public static ICollection<PlayerShortDTO> ToPlayerShortDTOs(
+            this ICollection<PlayerShort> players)
+        {
+            return players.Select(x => new PlayerShortDTO(x)).ToList();
         }
     }
 }

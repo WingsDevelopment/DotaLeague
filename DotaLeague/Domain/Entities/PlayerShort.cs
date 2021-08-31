@@ -14,6 +14,7 @@ namespace Domain.Entities
         public int MMR { get; set; }
         public int NumberOfMatches { get; set; }
         public string SteamID { get; set; }
+        public int VouchedLeague { get; set; }
 
         public int Pos1PriorityValue { get; set; }
         public int Pos2PriorityValue { get; set; }
@@ -28,12 +29,15 @@ namespace Domain.Entities
             float winrate, 
             int mmr, 
             string steamID,
+            int vouchedLeague,
             int numberOfMatches)
         {
             Email = email;
+            DisplayName = email;
             WinRate = winrate;
             MMR = mmr;
             SteamID = steamID;
+            VouchedLeague = vouchedLeague;
             NumberOfMatches = numberOfMatches;
         }
 
@@ -44,6 +48,8 @@ namespace Domain.Entities
             MMR = player.MMR;
             SteamID = player.SteamID;
             NumberOfMatches = player.NumberOfMatches;
+            VouchedLeague = player.VouchedLeague;
+            DisplayName = player.DisplayName;
 
             Pos1PriorityValue = player.Pos1PriorityValue;
             Pos2PriorityValue = player.Pos2PriorityValue;

@@ -14,16 +14,27 @@ namespace ApplicationServices
     public class PlayerService : IPlayerService
     {
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IMatchFactory _matchFactory;
         //todo premestiti u app settings
         private readonly int MaxQueueNumber = 10;
 
-        public PlayerService(IUnitOfWork unitOfWork)
+        public PlayerService(IUnitOfWork unitOfWork,
+            IMatchFactory matchFactory)
         {
             _unitOfWork = unitOfWork;
+            _matchFactory = matchFactory;
+        }
+
+        public async Task<IEnumerable<PlayerShortDTO>> GetPlayersInQueue(int leagueId)
+        {
+            var players = await _unitOfWork.QueueRepository.GetAll(MaxQueueNumber, leagueId);
+
+            return players.ToPlayerShortDTOs();
         }
 
         public async Task<PlayerShortDTO> Queue(string email, int leagueId)
         {
+            //todo: start transaction
             var player = await _unitOfWork.PlayerRepository.GetPlayerByEmail(email);
             if (player == null) throw new ArgumentException();
 
@@ -44,10 +55,11 @@ namespace ApplicationServices
                 if (players.Count == MaxQueueNumber - 1) players.Add(playerShort);
                 //else
 
-                var match = new Match(players);
+                var match = _matchFactory.InstantiateMatch(players);
 
                 await _unitOfWork.QueueRepository.RemoveAll(players);
                 await _unitOfWork.MatchRepository.Insert(match);
+                await _unitOfWork.SaveChangesAsync();
             }
             else
             {

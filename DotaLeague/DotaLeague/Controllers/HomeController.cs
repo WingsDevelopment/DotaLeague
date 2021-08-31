@@ -13,6 +13,7 @@ using System.Threading.Tasks;
 
 namespace DotaLeague.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -28,9 +29,11 @@ namespace DotaLeague.Controllers
             _playerService = playerService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index(int leagueId)
         {
-            return View();
+            var playerDTOs = await _playerService.GetPlayersInQueue(leagueId);
+
+            return View(playerDTOs);
         }
 
         [Authorize]

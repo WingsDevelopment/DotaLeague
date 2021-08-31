@@ -16,10 +16,16 @@ namespace SqlDataAccess.Repositories
         {
 
         }
-
-        public Task<List<PlayerShort>> GetAll(int take)
+        public async Task<int> GetQueueCount(int leagueId)
         {
-            var result = DbSet.Where(p => true).Take(take);
+            var result = await DbSet.Where(p => p.VouchedLeague == leagueId).CountAsync();
+
+            return result;
+        }
+
+        public Task<List<PlayerShort>> GetAll(int take, int leagueId)
+        {
+            var result = DbSet.Where(p => p.VouchedLeague == leagueId).Take(take);
 
             return result.ToListAsync();
         }
@@ -37,11 +43,5 @@ namespace SqlDataAccess.Repositories
             return result.SingleOrDefaultAsync();
         }
 
-        public async Task<int> GetQueueCount()
-        {
-            var result = await DbSet.CountAsync();
-
-            return result;
-        }
     }
 }

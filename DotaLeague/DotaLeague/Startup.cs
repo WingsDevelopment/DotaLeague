@@ -1,4 +1,5 @@
 using ApplicationServices;
+using ApplicationServices.Factories;
 using ApplicationServices.Interfaces;
 using Domain.RepositoryInterfaces;
 using DotaLeague.Hubs;
@@ -83,6 +84,7 @@ namespace DotaLeague
             // Add application services.
             services.AddScoped<IUnitOfWork, EfCoreUnitOfWork>();
             services.AddScoped<IPlayerService, PlayerService>();
+            services.AddScoped<IMatchFactory, MatchFactory>();
             services.AddScoped<IPlayerRepository, PlayerRepository>();
 
 

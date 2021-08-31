@@ -45,7 +45,11 @@ namespace ApplicationServices.ApplicationDTOs
             NumberOfMatches = player.NumberOfMatches;
             Winrate = player.Winrate;
 
-            Winrate = player.Winrate;
+            Pos1PriorityValue = player.Pos1PriorityValue;
+            Pos1PriorityValue = player.Pos2PriorityValue;
+            Pos1PriorityValue = player.Pos1PriorityValue;
+            Pos1PriorityValue = player.Pos1PriorityValue;
+            Pos1PriorityValue = player.Pos1PriorityValue;
 
             VouchedLeague = player.VouchedLeague;
             Reports = player.Reports?.ToReportDTOs()?.ToList();
