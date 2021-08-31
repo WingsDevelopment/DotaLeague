@@ -17,6 +17,7 @@ namespace SqlDataAccess
         private IPlayerRepository _userRepository;
         private IMatchRepository _matchRepository;
         private ILeagueRepository _leagueRepository;
+        private IQueueRepository _queueRepository;
 
         public IReportRepository ReportRepository =>
             _reportRepository ??
@@ -33,6 +34,9 @@ namespace SqlDataAccess
         public ILeagueRepository LeagueRepository =>
             _leagueRepository ??
             (_leagueRepository = new LeagueRepository(Context));
+        public IQueueRepository QueueRepository =>
+            _queueRepository ??
+            (_queueRepository = new QueueRepository(Context));
 
         public EfCoreUnitOfWork(SqlDotaLeagueContext context)
         {

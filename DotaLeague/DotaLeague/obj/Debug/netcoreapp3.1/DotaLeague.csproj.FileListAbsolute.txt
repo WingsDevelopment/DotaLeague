@@ -1233,3 +1233,4 @@ C:\Users\bansc\repositories\DotaLeague\DotaLeague\DotaLeague\obj\Debug\netcoreap
 C:\Users\bansc\repositories\DotaLeague\DotaLeague\DotaLeague\obj\Debug\netcoreapp3.1\DotaLeague.pdb
 C:\Users\bansc\repositories\DotaLeague\DotaLeague\DotaLeague\obj\Debug\netcoreapp3.1\DotaLeague.genruntimeconfig.cache
 C:\Repos\DotaLeague\DotaLeague\DotaLeague\bin\Debug\netcoreapp3.1\wwwroot\assets\media\ding.mp3
+C:\Users\bansc\repositories\DotaLeague\DotaLeague\DotaLeague\bin\Debug\netcoreapp3.1\wwwroot\assets\media\ding.mp3

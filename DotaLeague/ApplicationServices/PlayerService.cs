@@ -48,10 +48,10 @@ namespace ApplicationServices
             //todo: smisliti kako voditi count i startovati match!
             var playerShort = new PlayerShort(player);
 
-            var count = await _unitOfWork.QueueRepository.GetQueueCount();
+            var count = await _unitOfWork.QueueRepository.GetQueueCount(leagueId);
             if (count >= MaxQueueNumber - 1)
             {
-                var players = await _unitOfWork.QueueRepository.GetAll(MaxQueueNumber);
+                var players = await _unitOfWork.QueueRepository.GetAll(MaxQueueNumber, leagueId);
                 if (players.Count == MaxQueueNumber - 1) players.Add(playerShort);
                 //else
 

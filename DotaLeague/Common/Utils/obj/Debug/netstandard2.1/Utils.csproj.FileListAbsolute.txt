@@ -11,7 +11,6 @@ C:\Repos\DotaLeague\DotaLeague\Common\Utils\obj\Debug\netstandard2.1\Utils.pdb
 C:\Users\bansc\repositories\DotaLeague\DotaLeague\Common\Utils\bin\Debug\netstandard2.1\Utils.deps.json
 C:\Users\bansc\repositories\DotaLeague\DotaLeague\Common\Utils\bin\Debug\netstandard2.1\Utils.dll
 C:\Users\bansc\repositories\DotaLeague\DotaLeague\Common\Utils\bin\Debug\netstandard2.1\Utils.pdb
-C:\Users\bansc\repositories\DotaLeague\DotaLeague\Common\Utils\obj\Debug\netstandard2.1\Utils.csproj.AssemblyReference.cache
 C:\Users\bansc\repositories\DotaLeague\DotaLeague\Common\Utils\obj\Debug\netstandard2.1\Utils.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\bansc\repositories\DotaLeague\DotaLeague\Common\Utils\obj\Debug\netstandard2.1\Utils.AssemblyInfoInputs.cache
 C:\Users\bansc\repositories\DotaLeague\DotaLeague\Common\Utils\obj\Debug\netstandard2.1\Utils.AssemblyInfo.cs

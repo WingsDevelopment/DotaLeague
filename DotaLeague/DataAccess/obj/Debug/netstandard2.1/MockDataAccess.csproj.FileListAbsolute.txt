@@ -24,3 +24,16 @@ C:\Repos\DotaLeague\DotaLeague\DataAccess\obj\Debug\netstandard2.1\MockDataAcces
 C:\Repos\DotaLeague\DotaLeague\DataAccess\obj\Debug\netstandard2.1\MockDataAccess.csproj.CopyComplete
 C:\Repos\DotaLeague\DotaLeague\DataAccess\obj\Debug\netstandard2.1\MockDataAccess.dll
 C:\Repos\DotaLeague\DotaLeague\DataAccess\obj\Debug\netstandard2.1\MockDataAccess.pdb
+C:\Users\bansc\repositories\DotaLeague\DotaLeague\DataAccess\obj\Debug\netstandard2.1\MockDataAccess.csproj.AssemblyReference.cache
+C:\Users\bansc\repositories\DotaLeague\DotaLeague\DataAccess\obj\Debug\netstandard2.1\MockDataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bansc\repositories\DotaLeague\DotaLeague\DataAccess\obj\Debug\netstandard2.1\MockDataAccess.AssemblyInfoInputs.cache
+C:\Users\bansc\repositories\DotaLeague\DotaLeague\DataAccess\obj\Debug\netstandard2.1\MockDataAccess.AssemblyInfo.cs
+C:\Users\bansc\repositories\DotaLeague\DotaLeague\DataAccess\obj\Debug\netstandard2.1\MockDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\bansc\repositories\DotaLeague\DotaLeague\DataAccess\obj\Debug\netstandard2.1\MockDataAccess.dll
+C:\Users\bansc\repositories\DotaLeague\DotaLeague\DataAccess\obj\Debug\netstandard2.1\MockDataAccess.pdb
+C:\Users\bansc\repositories\DotaLeague\DotaLeague\DataAccess\bin\Debug\netstandard2.1\MockDataAccess.deps.json
+C:\Users\bansc\repositories\DotaLeague\DotaLeague\DataAccess\bin\Debug\netstandard2.1\MockDataAccess.dll
+C:\Users\bansc\repositories\DotaLeague\DotaLeague\DataAccess\bin\Debug\netstandard2.1\MockDataAccess.pdb
+C:\Users\bansc\repositories\DotaLeague\DotaLeague\DataAccess\bin\Debug\netstandard2.1\Domain.dll
+C:\Users\bansc\repositories\DotaLeague\DotaLeague\DataAccess\bin\Debug\netstandard2.1\Domain.pdb
+C:\Users\bansc\repositories\DotaLeague\DotaLeague\DataAccess\obj\Debug\netstandard2.1\MockDataAccess.csproj.CopyComplete

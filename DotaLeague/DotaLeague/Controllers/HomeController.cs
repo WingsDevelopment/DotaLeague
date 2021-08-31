@@ -13,7 +13,6 @@ using System.Threading.Tasks;
 
 namespace DotaLeague.Controllers
 {
-    [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

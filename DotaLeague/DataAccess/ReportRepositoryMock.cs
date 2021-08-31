@@ -58,5 +58,10 @@ namespace MockDataAccess
         {
             throw new NotImplementedException();
         }
+
+        public Task InsertMany(IEnumerable<Report> entities)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
