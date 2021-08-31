@@ -11,6 +11,7 @@ namespace Domain.RepositoryInterfaces
         IPlayerRepository PlayerRepository { get; }
         IMatchRepository MatchRepository { get; }
         ILeagueRepository LeagueRepository { get; }
+        IQueueRepository QueueRepository { get; }
         Task SaveChangesAsync();
     }
 }

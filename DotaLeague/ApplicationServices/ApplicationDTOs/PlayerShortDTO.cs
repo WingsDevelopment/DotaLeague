@@ -1,4 +1,5 @@
-﻿using DotaLeague.Domain.Entities;
+﻿using Domain.Entities;
+using DotaLeague.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -16,7 +17,15 @@ namespace ApplicationServices.ApplicationDTOs
         {
             Id = player.Id;
             Email = player.Email;
-            WinRate = 0; //todo: smisliti
+            WinRate = player.Winrate;
+            MMR = player.MMR;
+        }
+
+        public PlayerShortDTO(PlayerShort player)
+        {
+            Id = player.Id;
+            Email = player.Email;
+            WinRate = player.WinRate;
             MMR = player.MMR;
         }
     }

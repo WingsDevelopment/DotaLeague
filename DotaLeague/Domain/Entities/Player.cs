@@ -14,6 +14,7 @@ namespace DotaLeague.Domain.Entities
         /// </summary>
         public string Email { get; set; }
         public int MMR { get; set; }
+        public int Winrate { get; set; }
         public string SteamID { get; set; }
         public DateTime RegisteredAt { get; set; }
         public int VouchedLeague { get; set; }
