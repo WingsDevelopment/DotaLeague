@@ -6311,24 +6311,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bansc\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Korisnik\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bansc\\repositories\\DotaLeague\\DotaLeague\\DotaLeague\\DotaLeague.csproj",
+      "projectUniqueName": "C:\\Repos\\DotaLeague\\DotaLeague\\DotaLeague\\DotaLeague.csproj",
       "projectName": "DotaLeague",
-      "projectPath": "C:\\Users\\bansc\\repositories\\DotaLeague\\DotaLeague\\DotaLeague\\DotaLeague.csproj",
-      "packagesPath": "C:\\Users\\bansc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bansc\\repositories\\DotaLeague\\DotaLeague\\DotaLeague\\obj\\",
+      "projectPath": "C:\\Repos\\DotaLeague\\DotaLeague\\DotaLeague\\DotaLeague.csproj",
+      "packagesPath": "C:\\Users\\Korisnik\\.nuget\\packages\\",
+      "outputPath": "C:\\Repos\\DotaLeague\\DotaLeague\\DotaLeague\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\bansc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Korisnik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -6341,14 +6342,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\bansc\\repositories\\DotaLeague\\DotaLeague\\ApplicationServices\\ApplicationServices.csproj": {
-              "projectPath": "C:\\Users\\bansc\\repositories\\DotaLeague\\DotaLeague\\ApplicationServices\\ApplicationServices.csproj"
+            "C:\\Repos\\DotaLeague\\DotaLeague\\ApplicationServices\\ApplicationServices.csproj": {
+              "projectPath": "C:\\Repos\\DotaLeague\\DotaLeague\\ApplicationServices\\ApplicationServices.csproj"
             },
-            "C:\\Users\\bansc\\repositories\\DotaLeague\\DotaLeague\\Common\\Utils\\Utils.csproj": {
-              "projectPath": "C:\\Users\\bansc\\repositories\\DotaLeague\\DotaLeague\\Common\\Utils\\Utils.csproj"
+            "C:\\Repos\\DotaLeague\\DotaLeague\\Common\\Utils\\Utils.csproj": {
+              "projectPath": "C:\\Repos\\DotaLeague\\DotaLeague\\Common\\Utils\\Utils.csproj"
             },
-            "C:\\Users\\bansc\\repositories\\DotaLeague\\DotaLeague\\SqlDataAccess\\SqlDataAccess.csproj": {
-              "projectPath": "C:\\Users\\bansc\\repositories\\DotaLeague\\DotaLeague\\SqlDataAccess\\SqlDataAccess.csproj"
+            "C:\\Repos\\DotaLeague\\DotaLeague\\SqlDataAccess\\SqlDataAccess.csproj": {
+              "projectPath": "C:\\Repos\\DotaLeague\\DotaLeague\\SqlDataAccess\\SqlDataAccess.csproj"
             }
           }
         }

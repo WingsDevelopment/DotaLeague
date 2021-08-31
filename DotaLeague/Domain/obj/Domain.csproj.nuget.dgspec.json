@@ -1,24 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bansc\\repositories\\DotaLeague\\DotaLeague\\Domain\\Domain.csproj": {}
+    "C:\\Repos\\DotaLeague\\DotaLeague\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bansc\\repositories\\DotaLeague\\DotaLeague\\Domain\\Domain.csproj": {
+    "C:\\Repos\\DotaLeague\\DotaLeague\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bansc\\repositories\\DotaLeague\\DotaLeague\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Repos\\DotaLeague\\DotaLeague\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\bansc\\repositories\\DotaLeague\\DotaLeague\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\bansc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bansc\\repositories\\DotaLeague\\DotaLeague\\Domain\\obj\\",
+        "projectPath": "C:\\Repos\\DotaLeague\\DotaLeague\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Korisnik\\.nuget\\packages\\",
+        "outputPath": "C:\\Repos\\DotaLeague\\DotaLeague\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\bansc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Korisnik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"

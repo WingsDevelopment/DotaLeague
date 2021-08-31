@@ -43,24 +43,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bansc\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Korisnik\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bansc\\repositories\\DotaLeague\\DotaLeague\\ApplicationServices\\ApplicationServices.csproj",
+      "projectUniqueName": "C:\\Repos\\DotaLeague\\DotaLeague\\ApplicationServices\\ApplicationServices.csproj",
       "projectName": "ApplicationServices",
-      "projectPath": "C:\\Users\\bansc\\repositories\\DotaLeague\\DotaLeague\\ApplicationServices\\ApplicationServices.csproj",
-      "packagesPath": "C:\\Users\\bansc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bansc\\repositories\\DotaLeague\\DotaLeague\\ApplicationServices\\obj\\",
+      "projectPath": "C:\\Repos\\DotaLeague\\DotaLeague\\ApplicationServices\\ApplicationServices.csproj",
+      "packagesPath": "C:\\Users\\Korisnik\\.nuget\\packages\\",
+      "outputPath": "C:\\Repos\\DotaLeague\\DotaLeague\\ApplicationServices\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\bansc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Korisnik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
@@ -73,11 +74,11 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "projectReferences": {
-            "C:\\Users\\bansc\\repositories\\DotaLeague\\DotaLeague\\Common\\Utils\\Utils.csproj": {
-              "projectPath": "C:\\Users\\bansc\\repositories\\DotaLeague\\DotaLeague\\Common\\Utils\\Utils.csproj"
+            "C:\\Repos\\DotaLeague\\DotaLeague\\Common\\Utils\\Utils.csproj": {
+              "projectPath": "C:\\Repos\\DotaLeague\\DotaLeague\\Common\\Utils\\Utils.csproj"
             },
-            "C:\\Users\\bansc\\repositories\\DotaLeague\\DotaLeague\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\bansc\\repositories\\DotaLeague\\DotaLeague\\Domain\\Domain.csproj"
+            "C:\\Repos\\DotaLeague\\DotaLeague\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Repos\\DotaLeague\\DotaLeague\\Domain\\Domain.csproj"
             }
           }
         }
