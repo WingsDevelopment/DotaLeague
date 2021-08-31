@@ -1,4 +1,5 @@
-﻿using DotaLeague.Domain.Enums;
+﻿using Domain.Entities;
+using DotaLeague.Domain.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,6 +28,11 @@ namespace DotaLeague.Domain.Entities
         //public MatchData MatchData { get; set; }
 
         public Match()
+        {
+
+        }
+
+        public Match(IEnumerable<PlayerShort> players)
         {
 
         }

@@ -13,8 +13,10 @@ namespace DotaLeague.Domain.Entities
         /// User's email
         /// </summary>
         public string Email { get; set; }
+        public string DisplayName { get; set; }
         public int MMR { get; set; }
-        public int Winrate { get; set; }
+        public float Winrate { get; set; }
+        public int NumberOfMatches { get; set; }
         public string SteamID { get; set; }
         public DateTime RegisteredAt { get; set; }
         public int VouchedLeague { get; set; }
@@ -23,6 +25,12 @@ namespace DotaLeague.Domain.Entities
         public bool IsBanned { get; set; }
         public DateTime TimeOutDateTime { get; set; }
         public List<Report> Reports { get; set; }
+
+        public int Pos1PriorityValue { get; set; }
+        public int Pos2PriorityValue { get; set; }
+        public int Pos3PriorityValue { get; set; }
+        public int Pos4PriorityValue { get; set; }
+        public int Pos5PriorityValue { get; set; }
 
         public Player()
         {

@@ -1,5 +1,6 @@
 ﻿using ApplicationServices.ApplicationDTOs;
 using ApplicationServices.Interfaces;
+using Domain.Entities;
 using Domain.RepositoryInterfaces;
 using DotaLeague.Domain.Entities;
 using System;
@@ -13,6 +14,8 @@ namespace ApplicationServices
     public class PlayerService : IPlayerService
     {
         private readonly IUnitOfWork _unitOfWork;
+        //todo premestiti u app settings
+        private readonly int MaxQueueNumber = 10;
 
         public PlayerService(IUnitOfWork unitOfWork)
         {
@@ -32,8 +35,28 @@ namespace ApplicationServices
             //if (player.VouchedLeague != league.Id) throw new NotVouchedException();
 
             //todo: smisliti kako voditi count i startovati match!
+            var playerShort = new PlayerShort(player);
 
-            return new PlayerShortDTO(player);
+            var count = await _unitOfWork.QueueRepository.GetQueueCount();
+            if (count >= MaxQueueNumber - 1)
+            {
+                var players = await _unitOfWork.QueueRepository.GetAll(MaxQueueNumber);
+                if (players.Count == MaxQueueNumber - 1) players.Add(playerShort);
+                //else
+
+                var match = new Match(players);
+
+                await _unitOfWork.QueueRepository.RemoveAll(players);
+                await _unitOfWork.MatchRepository.Insert(match);
+            }
+            else
+            {
+                await _unitOfWork.QueueRepository.Insert(playerShort);
+                await _unitOfWork.SaveChangesAsync();
+            }
+
+
+            return new PlayerShortDTO(playerShort);
         }
 
         /// <summary>

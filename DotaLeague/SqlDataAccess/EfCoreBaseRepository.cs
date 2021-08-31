@@ -20,6 +20,10 @@ namespace SqlDataAccess
             DbSet = context.Set<TEntity>();
         }
 
+        public virtual async Task InsertMany(IEnumerable<TEntity> entities)
+        {
+            await DbSet.AddRangeAsync(entities);
+        }
         public virtual async Task Insert(TEntity entity)
         {
             await DbSet.AddAsync(entity);

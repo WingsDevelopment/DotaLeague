@@ -7,5 +7,6 @@ namespace Domain.RepositoryInterfaces
 {
     public interface IMatchRepository : IBaseRepository<Match>
     {
+
     }
 }

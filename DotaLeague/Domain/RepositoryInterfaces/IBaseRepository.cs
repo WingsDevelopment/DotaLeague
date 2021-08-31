@@ -12,5 +12,6 @@ namespace Domain.RepositoryInterfaces
         public Task<TEntity> GetById(object id);
         public Task<bool> Update(TEntity entity);
         public Task<bool> Delete(TEntity entity);
+        public Task InsertMany(IEnumerable<TEntity> entities)
     }
 }

@@ -14,12 +14,11 @@ namespace ApplicationServices.ApplicationDTOs
         /// User's email
         /// </summary>
         public string Email { get; set; }
-        /// <summary>
-        /// User's password hash
-        /// </summary>
-        public string PasswordHash { get; set; }
+        public string DisplayName { get; set; }
         public DateTime RegisteredAt { get; set; }
 
+        public int NumberOfMatches { get; set; }
+        public float Winrate { get; set; }
         public int VouchedLeague { get; set; }
         public string SteamID { get; set; }
         public DateTime TimeOutDateTime { get; set; }
@@ -27,19 +26,29 @@ namespace ApplicationServices.ApplicationDTOs
         public List<ReportDTO> Reports { get; set; }
         public int Likes { get; set; }
         public int Dislikes { get; set; }
+        public int Pos1PriorityValue { get; set; }
+        public int Pos2PriorityValue { get; set; }
+        public int Pos3PriorityValue { get; set; }
+        public int Pos4PriorityValue { get; set; }
+        public int Pos5PriorityValue { get; set; }
 
-        public PlayerDTO(Player user)
+        public PlayerDTO(Player player)
         {
-            Id = user.Id;
-            Email = user.Email;
-            RegisteredAt = user.RegisteredAt;
-            SteamID = user.SteamID;
-            TimeOutDateTime = user.TimeOutDateTime;
-            Likes = user.Likes;
-            Dislikes = user.Dislikes;
+            Id = player.Id;
+            Email = player.Email;
+            RegisteredAt = player.RegisteredAt;
+            SteamID = player.SteamID;
+            TimeOutDateTime = player.TimeOutDateTime;
+            Likes = player.Likes;
+            Dislikes = player.Dislikes;
 
-            VouchedLeague = user.VouchedLeague;
-            Reports = user.Reports?.ToReportDTOs()?.ToList();
+            NumberOfMatches = player.NumberOfMatches;
+            Winrate = player.Winrate;
+
+            Winrate = player.Winrate;
+
+            VouchedLeague = player.VouchedLeague;
+            Reports = player.Reports?.ToReportDTOs()?.ToList();
         }
     }
 }

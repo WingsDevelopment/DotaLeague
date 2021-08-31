@@ -17,11 +17,31 @@ namespace SqlDataAccess.Repositories
 
         }
 
+        public Task<List<PlayerShort>> GetAll(int take)
+        {
+            var result = DbSet.Where(p => true).Take(take);
+
+            return result.ToListAsync();
+        }
+        public Task RemoveAll(IEnumerable<PlayerShort> playerShorts)
+        {
+            DbSet.RemoveRange(playerShorts);
+
+            return Task.CompletedTask;
+        }
+
         public Task<PlayerShort> GetPlayerByEmail(string email)
         {
             var result = DbSet.Where(p => p.Email.ToLower().Equals(email.ToLower()));
 
             return result.SingleOrDefaultAsync();
+        }
+
+        public async Task<int> GetQueueCount()
+        {
+            var result = await DbSet.CountAsync();
+
+            return result;
         }
     }
 }
