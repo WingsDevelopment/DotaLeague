@@ -9,19 +9,19 @@ namespace DotaLeague.Domain.Entities
 {
     public class Match
     {
-        public int Id { get; set; }
+        public int Id { get; private set; }
         /// <summary>
         /// How much mmr will players win and lose
         /// </summary>
-        public int MMR { get; set; }
+        public int MMR { get; private set; }
         /// <summary>
         /// Winning team
         /// </summary>
-        public TeamName Winner { get; set; }
+        public TeamName Winner { get; private set; }
         /// <summary>
         /// Match state
         /// </summary>
-        public MatchState MatchState { get; set; }
+        public MatchState MatchState { get; private set; }
         /// <summary>
         /// Data gethered from dota bot - used for match history
         /// </summary>

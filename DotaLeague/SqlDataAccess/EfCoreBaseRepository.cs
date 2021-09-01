@@ -34,6 +34,7 @@ namespace SqlDataAccess
 
             return entity;
         }
+
         public virtual async Task<bool> Update(TEntity entity)
         {
             try

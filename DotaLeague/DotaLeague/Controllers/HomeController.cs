@@ -16,44 +16,15 @@ namespace DotaLeague.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly IHubContext<QueueHub, IQueueHub> _hubContext;
-        private readonly IPlayerService _playerService;
 
-        public HomeController(ILogger<HomeController> logger,
-            IHubContext<QueueHub, IQueueHub> hubContext,
-            IPlayerService playerService)
+        public HomeController(ILogger<HomeController> logger)
         {
-            _hubContext = hubContext;
             _logger = logger;
-            _playerService = playerService;
         }
 
-        public async Task<IActionResult> Index(int leagueId)
+        public IActionResult Index()
         {
-            var playerDTOs = await _playerService.GetPlayersInQueue(leagueId);
-
-            return View(playerDTOs);
-        }
-
-        [Authorize]
-        [HttpGet]
-        public async Task<IActionResult> Queue(int leagueId)
-        {
-            try
-            {
-                var user = User.Identity.Name;
-
-                var playerDTO = await _playerService.Queue(user, leagueId);
-
-                await _hubContext.Clients.All.UserQueued(playerDTO);
-
-                return Ok();
-            }
-            catch(Exception e) 
-            {
-                //todo: error handling
-                return Error();
-            }
+            return View();
         }
 
         public IActionResult Privacy()

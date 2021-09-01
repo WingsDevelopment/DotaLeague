@@ -29,6 +29,9 @@ namespace SqlDataAccess.Migrations
                     b.Property<DateTime>("EndDateTime")
                         .HasColumnType("datetime2");
 
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
@@ -38,6 +41,57 @@ namespace SqlDataAccess.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Leagues");
+                });
+
+            modelBuilder.Entity("Domain.Entities.PlayerShort", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("DisplayName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("MMR")
+                        .HasColumnType("int");
+
+                    b.Property<int>("NumberOfMatches")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PlayerId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Pos1PriorityValue")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Pos2PriorityValue")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Pos3PriorityValue")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Pos4PriorityValue")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Pos5PriorityValue")
+                        .HasColumnType("int");
+
+                    b.Property<string>("SteamID")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("VouchedLeague")
+                        .HasColumnType("int");
+
+                    b.Property<float>("WinRate")
+                        .HasColumnType("real");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Queue");
                 });
 
             modelBuilder.Entity("DotaLeague.Domain.Entities.Match", b =>
@@ -71,6 +125,9 @@ namespace SqlDataAccess.Migrations
                     b.Property<int>("Dislikes")
                         .HasColumnType("int");
 
+                    b.Property<string>("DisplayName")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
 
@@ -81,6 +138,24 @@ namespace SqlDataAccess.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("MMR")
+                        .HasColumnType("int");
+
+                    b.Property<int>("NumberOfMatches")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Pos1PriorityValue")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Pos2PriorityValue")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Pos3PriorityValue")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Pos4PriorityValue")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Pos5PriorityValue")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("RegisteredAt")
@@ -94,6 +169,9 @@ namespace SqlDataAccess.Migrations
 
                     b.Property<int>("VouchedLeague")
                         .HasColumnType("int");
+
+                    b.Property<float>("Winrate")
+                        .HasColumnType("real");
 
                     b.HasKey("Id");
 

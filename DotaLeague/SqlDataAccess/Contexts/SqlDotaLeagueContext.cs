@@ -15,6 +15,7 @@ namespace SqlDataAccess.Contexts
         public DbSet<Report> Reports { get; set; }
         public DbSet<Player> Players { get; set; }
         public DbSet<League> Leagues { get; set; }
+        public DbSet<PlayerShort> Queue { get; set; }
 
         public SqlDotaLeagueContext(DbContextOptions<SqlDotaLeagueContext> options)
             : base(options)
@@ -27,6 +28,7 @@ namespace SqlDataAccess.Contexts
             modelBuilder.ApplyConfiguration(new MatchConfiguration());
             modelBuilder.ApplyConfiguration(new ReportConfiguration());
             modelBuilder.ApplyConfiguration(new LeagueConfiguration());
+            modelBuilder.ApplyConfiguration(new PlayerShortConfiguration());
 
             base.OnModelCreating(modelBuilder);
         }

@@ -10,7 +10,8 @@ namespace Domain.RepositoryInterfaces
     {
         public Task<PlayerShort> GetPlayerByEmail(string email);
         public Task<int> GetQueueCount(int leagueId);
-        public Task<List<PlayerShort>> GetAll(int take, int leagueId);
+        public Task<List<PlayerShort>> GetAll(int leagueId);
         public Task RemoveAll(IEnumerable<PlayerShort> playerShorts);
+        public Task<PlayerShort> GetByPlayerId(int playerId);
     }
 }

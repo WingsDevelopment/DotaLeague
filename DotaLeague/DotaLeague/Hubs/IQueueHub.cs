@@ -9,5 +9,6 @@ namespace DotaLeague.Hubs
     public interface IQueueHub
     {
         Task UserQueued(PlayerShortDTO userShortDTO);
+        Task UserDeQueued(int playerId);
     }
 }

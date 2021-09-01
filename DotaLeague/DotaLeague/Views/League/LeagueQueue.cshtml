@@ -1,0 +1,130 @@
+﻿@model ApplicationServices.ApplicationDTOs.LeagueWithQueueDTO
+
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+
+<div class="content">
+    <div class="row">
+        <div class="col-12">
+        </div>
+    </div>
+    <div class="row">
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h2 class="card-title"><strong>@ViewData["Title"]</strong></h2>
+                </div>
+                <div class="card-body" style="margin-top: 10px">
+                    <div class="table-responsive">
+                        <table class="table tablesorter " id="queueTable">
+                            <thead class=" text-primary">
+                                <tr>
+                                    <th>
+                                        #
+                                    </th>
+                                    <th>
+                                        NickName
+                                    </th>
+                                    <th>
+                                        Win Rate
+                                    </th>
+                                    <th>
+                                        MMR
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach(var player in Model.PlayersInQueue) 
+                                {
+                                    <tr id="@player.PlayerId">
+                                        <td>
+                                            #
+                                        </td>
+                                        <td>
+                                            @player.DisplayName
+                                        </td>
+                                        <td>
+                                            @player.WinRate
+                                        </td>
+                                        <td>
+                                            @player.MMR
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card-footer text-center">
+                    <button class="btn  btn-info" onclick="JoinQueue()">Join Queue</button>
+                    <button class="btn  btn-warning" onclick="LeaveQueue()">Leave Queue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function LeaveQueue() {
+        $.ajax({
+            type: "GET",
+            url: "/League/LeaveQueue",
+            data: { "leagueId": '@Model.Id'},
+            contentType: "application/json",
+
+            success: function (data) {
+                console.log(data);
+            },
+            error: function (xhr) {
+                console.log(xhr);
+            }
+        });
+    }
+
+    function JoinQueue() {
+        $.ajax({
+            type: "GET",
+            url: "/League/Queue",
+            data: { "leagueId": '@Model.Id'},
+            contentType: "application/json",
+
+            success: function (data) {
+                console.log(data);
+            },
+            error: function (xhr) {
+                console.log(xhr);
+            }
+        });
+    }
+
+    function QueuePlayer(userDTO) {
+        var table = document.getElementById("queueTable");
+
+        console.log(userDTO);
+        var row = table.insertRow();
+        row.id = userDTO.playerId;
+
+        var cell1 = row.insertCell(0);
+        cell1.innerHTML = "#";
+
+        var cell2 = row.insertCell(1);
+        cell2.innerHTML = userDTO.displayName;
+
+        var cell3 = row.insertCell(2);
+        cell3.innerHTML = userDTO.winRate;
+
+        var cell4 = row.insertCell(3);
+        cell4.innerHTML = userDTO.mmr;
+    }
+
+    function UserDeQueued(playerId) {
+        console.log(playerId);
+        var row = document.getElementById(playerId);
+        row.parentNode.removeChild(row);
+    }
+</script>

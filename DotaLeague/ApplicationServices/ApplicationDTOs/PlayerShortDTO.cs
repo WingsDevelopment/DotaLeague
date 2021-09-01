@@ -10,6 +10,7 @@ namespace ApplicationServices.ApplicationDTOs
     public class PlayerShortDTO
     {
         public int Id { get; set; }
+        public int PlayerId { get; set; }
         public string DisplayName { get; set; }
         public string Email { get; set; }
         public float WinRate { get; set; }
@@ -26,7 +27,7 @@ namespace ApplicationServices.ApplicationDTOs
 
         public PlayerShortDTO(Player player)
         {
-            Id = player.Id;
+            PlayerId = player.Id;
             DisplayName = player.DisplayName;
             Email = player.Email;
             WinRate = player.Winrate;
@@ -45,6 +46,7 @@ namespace ApplicationServices.ApplicationDTOs
         public PlayerShortDTO(PlayerShort player)
         {
             Id = player.Id;
+            PlayerId = player.PlayerId;
             DisplayName = player.DisplayName;
             Email = player.Email;
             WinRate = player.WinRate;

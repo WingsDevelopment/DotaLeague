@@ -1,0 +1,61 @@
+﻿@model ApplicationServices.ApplicationDTOs.LeagueDTO
+
+
+
+<div class="content">
+    <div class="row">
+        <div class="col-12">
+        </div>
+    </div>
+    <div class="row">
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-md-6">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h2 class="card-title">@ViewData["Title"]</h2>
+                </div>
+                    <div class="card-body" style="margin-top: 10px">
+                        <div>
+                            <h4>Delete league</h4>
+
+                            <dl class="row">
+                                <dt class="col-sm-2">
+                                    @Html.DisplayNameFor(model => model.Id)
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @Html.DisplayFor(model => model.Id)
+                                </dd>
+                                <dt class="col-sm-2">
+                                    @Html.DisplayNameFor(model => model.Name)
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @Html.DisplayFor(model => model.Name)
+                                </dd>
+                                <dt class="col-sm-2">
+                                    Starting date
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @Model.StartDateTime.ToShortDateString()
+                                </dd>
+                                <dt class="col-sm-2">
+                                    Ending date
+                                </dt>
+                                <dd class="col-sm-10">
+                                    @Model.EndDateTime.ToShortDateString()
+                                </dd>
+                            </dl>
+
+                        </div>
+                    </div>
+                    <div class="card-footer text-center">
+                        <form asp-action="DeleteLeagueConfirm">
+                            <input type="hidden" asp-for="Id" />
+                            <input type="submit" value="Delete League" class="btn btn-danger" />
+                            <a asp-action="Index" class="btn btn-secondary">Back</a>
+                        </form>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,72 @@
+﻿@model ICollection<ApplicationServices.ApplicationDTOs.LeagueDTO>
+@{
+    ViewData["Title"] = "League listing";
+}
+
+
+<div class="content">
+    <div class="row">
+        <div class="col-12">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h3 class="card-title">@ViewData["Title"]</h3>
+                </div>
+                <div class="card-body" style="margin-top: 10px">
+                    <table class="table tablesorter " id="">
+                        <thead class=" text-primary">
+                            <tr>
+                                <th>
+                                    #
+                                </th>
+                                <th>
+                                    Name
+                                </th>
+                                <th>
+                                    Starting date
+                                </th>
+                                <th>
+                                    Ending date
+                                </th>
+                                <th>
+                                    #
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach(var m in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @m.Id
+                                    </td>
+                                    <td>
+                                        @m.Name
+                                    </td>
+                                    <td>
+                                        @m.StartDateTime.ToShortDateString()
+                                    </td>
+                                    <td>
+                                        @m.EndDateTime.ToShortDateString()
+                                    </td>
+                                    <td>
+                                        <a class="btn btn-warning" asp-action="DeleteLeague" 
+                                           asp-route-leagueId="@m.Id">Delete</a>
+                                    </td>
+                                </tr>
+                            }
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="card-footer text-center">
+                    <a class="btn btn-info" asp-action="CreateLeague">Create new</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

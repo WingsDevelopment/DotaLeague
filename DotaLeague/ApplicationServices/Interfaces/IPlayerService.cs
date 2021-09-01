@@ -18,6 +18,6 @@ namespace ApplicationServices.Interfaces
         /// <returns></returns>
         public Task<IEnumerable<PlayerDTO>> GetScoreBoard(int leagueId);
         public Task<PlayerShortDTO> Queue(string email, int leagueId);
-        public Task<IEnumerable<PlayerShortDTO>> GetPlayersInQueue(int leagueId);
+        Task<PlayerShortDTO> LeaveQueue(string email, int leagueId);
     }
 }

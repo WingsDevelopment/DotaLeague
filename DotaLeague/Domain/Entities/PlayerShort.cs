@@ -7,20 +7,21 @@ namespace Domain.Entities
 {
     public class PlayerShort
     {
-        public int Id { get; set; }
-        public string DisplayName { get; set; }
-        public string Email { get; set; }
-        public float WinRate { get; set; }
-        public int MMR { get; set; }
-        public int NumberOfMatches { get; set; }
-        public string SteamID { get; set; }
-        public int VouchedLeague { get; set; }
+        public int Id { get; private set; }
+        public int PlayerId { get; private set; }
+        public string DisplayName { get; private set; }
+        public string Email { get; private set; }
+        public float WinRate { get; private set; }
+        public int MMR { get; private set; }
+        public int NumberOfMatches { get; private set; }
+        public string SteamID { get; private set; }
+        public int VouchedLeague { get; private set; }
 
-        public int Pos1PriorityValue { get; set; }
-        public int Pos2PriorityValue { get; set; }
-        public int Pos3PriorityValue { get; set; }
-        public int Pos4PriorityValue { get; set; }
-        public int Pos5PriorityValue { get; set; }
+        public int Pos1PriorityValue { get; private set; }
+        public int Pos2PriorityValue { get; private set; }
+        public int Pos3PriorityValue { get; private set; }
+        public int Pos4PriorityValue { get; private set; }
+        public int Pos5PriorityValue { get; private set; }
         public PlayerShort()
         {
 
@@ -43,6 +44,7 @@ namespace Domain.Entities
 
         public PlayerShort(Player player)
         {
+            PlayerId = player.Id;
             Email = player.Email;
             WinRate = player.Winrate;
             MMR = player.MMR;

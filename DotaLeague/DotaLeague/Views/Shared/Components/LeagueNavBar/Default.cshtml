@@ -1,0 +1,11 @@
+﻿@model IEnumerable<ApplicationServices.ApplicationDTOs.LeagueDTO>
+
+@foreach (var l in Model)
+{
+    <li>
+        <a href="/league/leagueQueue?leagueId=@l.Id">
+            <i class="tim-icons icon-delivery-fast"></i>
+            <p>@l.Name</p>
+        </a>
+    </li>
+}

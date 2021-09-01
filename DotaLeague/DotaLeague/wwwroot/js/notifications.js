@@ -28,10 +28,9 @@ connection.onclose(start);
 start();
 
 connection.on("UserQueued", (userDTO) => {
-    OnUserQueued(userDTO);
+    QueuePlayer(userDTO);
 });
 
-//on message receive
-function OnUserQueued(userDTO) {
-    console.log(userDTO);
-}
+connection.on("UserDeQueued", (playerId) => {
+    UserDeQueued(playerId);
+});

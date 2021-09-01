@@ -22,10 +22,16 @@ namespace SqlDataAccess.Repositories
 
             return result;
         }
-
-        public Task<List<PlayerShort>> GetAll(int take, int leagueId)
+        public Task<PlayerShort> GetByPlayerId(int playerId)
         {
-            var result = DbSet.Where(p => p.VouchedLeague == leagueId).Take(take);
+            var result = DbSet.Where(p => p.PlayerId == playerId);
+
+            return result.SingleOrDefaultAsync();
+        }
+
+        public Task<List<PlayerShort>> GetAll(int leagueId)
+        {
+            var result = DbSet.Where(p => p.VouchedLeague == leagueId);
 
             return result.ToListAsync();
         }
