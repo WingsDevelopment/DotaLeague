@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ApplicationServices
+namespace ApplicationServices.Services
 {
     public class ReportService
     {

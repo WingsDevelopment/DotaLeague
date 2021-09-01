@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Utils.Exceptions;
 
-namespace ApplicationServices
+namespace ApplicationServices.Services
 {
     public class PlayerService : IPlayerService
     {

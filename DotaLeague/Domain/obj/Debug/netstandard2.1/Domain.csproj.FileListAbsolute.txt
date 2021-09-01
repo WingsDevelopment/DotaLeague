@@ -26,4 +26,3 @@ C:\Users\bansc\repositories\DotaLeague\DotaLeague\Domain\obj\Debug\netstandard2.
 C:\Users\bansc\repositories\DotaLeague\DotaLeague\Domain\obj\Debug\netstandard2.1\Domain.csproj.CoreCompileInputs.cache
 C:\Users\bansc\repositories\DotaLeague\DotaLeague\Domain\obj\Debug\netstandard2.1\Domain.dll
 C:\Users\bansc\repositories\DotaLeague\DotaLeague\Domain\obj\Debug\netstandard2.1\Domain.pdb
-C:\Repos\DotaLeague\DotaLeague\Domain\obj\Debug\netstandard2.1\Domain.csproj.AssemblyReference.cache
