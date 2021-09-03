@@ -38,12 +38,10 @@ namespace DotaLeague
         {
             services.AddSignalR();
 
-            services.AddDbContext<SqlDotaLeagueContext>(options =>
-                options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContextPool<SqlDotaLeagueContext>(options =>
 
-            //services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-            //    .AddEntityFrameworkStores<SqlDotaLeagueContext>();
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))
+            );
 
             services.AddIdentity<IdentityUser, IdentityRole>()
                 .AddEntityFrameworkStores<SqlDotaLeagueContext>()
@@ -72,7 +70,7 @@ namespace DotaLeague
             {
                 // Cookie settings
                 options.Cookie.HttpOnly = true;
-                options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
+                options.ExpireTimeSpan = TimeSpan.FromDays(1);
                 // If the LoginPath isn't set, ASP.NET Core defaults 
                 // the path to /Account/Login.
                 options.LoginPath = "/Account/Login";
@@ -127,9 +125,9 @@ namespace DotaLeague
                 endpoints.MapHub<QueueHub>("/queueHub");
             });
 
-            CreateRolesAndDefaultUsers(serviceProvider);
+            CreateDefaultRolesAndDefaultUsers(serviceProvider);
         }
-        private void CreateRolesAndDefaultUsers(IServiceProvider serviceProvider)
+        private void CreateDefaultRolesAndDefaultUsers(IServiceProvider serviceProvider)
         {
             //initializing custom roles 
             var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();

@@ -1,0 +1,1 @@
+﻿var NOTIFICATION_HOST = "https://localhost:44301/queueHub";

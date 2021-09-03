@@ -2,6 +2,7 @@
 using ApplicationServices.Interfaces;
 using Domain.Entities;
 using Domain.RepositoryInterfaces;
+using Domain.SpecificationObjects.Enums;
 using DotaLeague.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -38,10 +39,10 @@ namespace ApplicationServices.Services
             }
 
             var league = await _unitOfWork.LeagueRepository.GetById(leagueId);
-            if (league == null) throw new ArgumentException();
+            if (league == null) throw new ArgumentException("Invalid league id");
 
             //if (String.IsNullOrWhiteSpace(player.SteamID)) throw new InvalidSteamIDException();
-            if (player.VouchedLeague != league.Id) throw new NotVouchedException();
+            if (player.VouchedLeague != league.Id) throw new NotVouchedException("You are not vouched for this league!");
 
             var playerShort = new PlayerShort(player);
 
@@ -69,11 +70,11 @@ namespace ApplicationServices.Services
         public async Task<PlayerShortDTO> LeaveQueue(string email, int leagueId)
         {
             var player = await _unitOfWork.PlayerRepository.GetPlayerByEmail(email);
-            if (player == null) throw new ArgumentException();
+            if (player == null) throw new ArgumentException("Invalid email.");
 
             var league = await _unitOfWork.LeagueRepository.GetById(leagueId);
-            if (league == null) throw new ArgumentException();
-            if (player.VouchedLeague != league.Id) throw new NotVouchedException();
+            if (league == null) throw new ArgumentException("Invalid league id");
+            if (player.VouchedLeague != league.Id) throw new NotVouchedException("You are not vouched for this league!");
 
             var queueData = await _unitOfWork.QueueRepository.GetByPlayerId(player.Id);
             if (queueData != null)
@@ -97,7 +98,7 @@ namespace ApplicationServices.Services
         public async Task<PlayerDTO> CreatePlayer(string email)
         {
             var data = await _unitOfWork.PlayerRepository.GetPlayerByEmail(email);
-            if (data != null) throw new PlayerAlreadyExistException();
+            if (data != null) throw new PlayerAlreadyExistException("Player already exist");
 
             var player = new Player(email);
 
@@ -111,15 +112,63 @@ namespace ApplicationServices.Services
             throw new NotImplementedException();
         }
 
-        public Task<PlayerDTO> GetPlayerByEmail(int email)
+        public async Task<PlayerDTO> GetPlayerByEmail(string email)
         {
-            throw new NotImplementedException();
+            var player = await _unitOfWork.PlayerRepository.GetPlayerByEmail(email);
+            if (player == null) throw new ArgumentException("Player not found!");
+
+            return new PlayerDTO(player);
         }
 
-        public Task<PlayerDTO> GetPlayerById(int id)
+        public async Task<ICollection<PlayerDTO>> GetByFilters(int? byId, 
+            string byDisplayName, string byEmail, string bySteamID, 
+            DateTime? registratedFrom, DateTime? registratedTo, 
+            int? mMRFrom, int? mMRTo, PlayerSortBy playerSortBy)
         {
-            throw new NotImplementedException();
+            var players = await _unitOfWork.PlayerRepository.GetByFilters(
+                    byId,
+                    byDisplayName,
+                    byEmail,
+                    bySteamID,
+                    registratedFrom,
+                    registratedTo,
+                    mMRFrom,
+                    mMRTo,
+                    playerSortBy
+                );
+
+            return players.ToPlayerDTOs();
         }
 
+        public async Task<PlayerDTO> UpdatePlayer(int id, string displayName, string steamID, 
+            DateTime timeOutDateTime, int vouchedLeague, 
+            int pos1PriorityValue, int pos2PriorityValue, 
+            int pos3PriorityValue, int pos4PriorityValue, int pos5PriorityValue)
+        {
+            var player = await _unitOfWork.PlayerRepository.GetById(id);
+            if (player == null) throw new ArgumentException("Player not found!");
+
+            var league = await _unitOfWork.LeagueRepository.GetById(vouchedLeague);
+            if (league == null) throw new LeagueServiceException("League not found!");
+
+            //todo: check if display name already exist
+            player.SetDisplayName(displayName);
+            //todo: check if Steam ID already exist
+            player.SetSteamID(steamID);
+            //todo: set max value?
+            player.SetTimeOutDateTime(timeOutDateTime);
+            player.SetVouchedLeagueId(vouchedLeague);
+            //todo: make sure that its distinct
+            player.SetPriorityValues(pos1PriorityValue,
+                pos2PriorityValue,
+                pos3PriorityValue,
+                pos4PriorityValue,
+                pos5PriorityValue);
+
+            await _unitOfWork.PlayerRepository.Update(player);
+            await _unitOfWork.SaveChangesAsync();
+
+            return new PlayerDTO(player);
+        }
     }
 }

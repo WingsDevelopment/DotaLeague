@@ -37,6 +37,8 @@
     <link href="~/assets/css/black-dashboard.css?v=1.0.0" rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="~/assets/demo/demo.css" rel="stylesheet" />
+    <link href="~/css/iziToast.min.css" rel="stylesheet" />
+    <script src="~/js/iziToast.min.js"></script>
 </head>
 <body class="@whiteContent" style="background-image: url('@Url.Content("~/assets/img/dotabg.jpg")');">
     <div class="wrapper">
@@ -117,7 +119,7 @@
                                     </a>
                                     <ul class="dropdown-menu dropdown-navbar">
                                         <li class="nav-link">
-                                            <a href="/Player/Details?email='@User.Identity.Name'"
+                                            <a href="/Player/Details?email=@User.Identity.Name"
                                                class="nav-item dropdown-item">Profile</a>
                                         </li>
                                         <li class="dropdown-divider"></li>
@@ -147,27 +149,58 @@
             </div>
             <!-- End Navbar -->
 
+            @if (TempData["Success"] != null)
+            {
+
+                @foreach (var message in @TempData["Success"].ToString().Split(Environment.NewLine))
+                {
+                    if (!string.IsNullOrEmpty(message))
+                    {
+                        <script>
+                            iziToast.success({
+                                message: '@message',
+                                position: 'topRight'
+                            });
+                        </script>
+                    }
+                }
+
+            }
+            @if (TempData["Error"] != null)
+            {
+                @foreach (var message in @TempData["Error"].ToString().Split(Environment.NewLine))
+                {
+                    if (!string.IsNullOrEmpty(message))
+                    {
+                        <script>
+                            iziToast.error({
+                                message: '@message',
+                                position: 'topRight'
+                            });
+                        </script>
+                    }
+                }
+            }
+            @if (TempData["Info"] != null)
+            {
+
+                @foreach (var message in @TempData["Info"].ToString().Split(Environment.NewLine))
+                {
+                    if (!string.IsNullOrEmpty(message))
+                    {
+                        <script>
+                            iziToast.info({
+                                message: '@message',
+                                position: 'topRight'
+                            });
+                        </script>
+                    }
+                }
+            }
             @RenderBody()
 
             <footer class="footer">
                 <div class="container-fluid">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="nav-link">
-                                Creative Tim
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="nav-link">
-                                About Us
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="nav-link">
-                                Blog
-                            </a>
-                        </li>
-                    </ul>
                     <div class="copyright">
                         ©
                         <script>
@@ -213,6 +246,12 @@
         </div>
     </div>
 
+    <environment names="Development">
+        <script src="~/js/appsettings/appSettingsDevelopment.js"></script>
+    </environment>
+    <environment names="Staging, Test, Production">
+        <script src="~/js/appsettings/appSettingsStaging.js"></script>
+    </environment>
 
     <script src="~/assets/js/core/jquery.min.js"></script>
     <script src="~/assets/js/core/popper.min.js"></script>

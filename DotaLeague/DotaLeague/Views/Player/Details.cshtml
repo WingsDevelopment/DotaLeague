@@ -1,0 +1,132 @@
+﻿@model ApplicationServices.ApplicationDTOs.PlayerDTO
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="content">
+    <div class="row">
+        <div class="col-lg-6 col-md-6">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h3 class="card-title">@ViewData["Title"]</h3>
+                </div>
+                <div class="card-body" style="margin-top: 10px">
+                    <div>
+                        <h4>Player</h4>
+                        <hr />
+                        <dl class="row">
+                            <dt class="col-sm-4">
+                                @Html.DisplayNameFor(model => model.Id)
+                            </dt>
+                            <dd class="col-sm-8">
+                                @Html.DisplayFor(model => model.Id)
+                            </dd>
+                            <dt class="col-sm-4">
+                                @Html.DisplayNameFor(model => model.Email)
+                            </dt>
+                            <dd class="col-sm-8">
+                                @Html.DisplayFor(model => model.Email)
+                            </dd>
+                            <dt class="col-sm-4">
+                                @Html.DisplayNameFor(model => model.DisplayName)
+                            </dt>
+                            <dd class="col-sm-8">
+                                @Html.DisplayFor(model => model.DisplayName)
+                            </dd>
+                            <dt class="col-sm-4">
+                                @Html.DisplayNameFor(model => model.RegisteredAt)
+                            </dt>
+                            <dd class="col-sm-8">
+                                @Html.DisplayFor(model => model.RegisteredAt)
+                            </dd>
+                            <dt class="col-sm-4">
+                                @Html.DisplayNameFor(model => model.NumberOfMatches)
+                            </dt>
+                            <dd class="col-sm-8">
+                                @Html.DisplayFor(model => model.NumberOfMatches)
+                            </dd>
+                            <dt class="col-sm-4">
+                                @Html.DisplayNameFor(model => model.Winrate)
+                            </dt>
+                            <dd class="col-sm-8">
+                                @Html.DisplayFor(model => model.Winrate)
+                            </dd>
+                            <dt class="col-sm-4">
+                                @Html.DisplayNameFor(model => model.VouchedLeague)
+                            </dt>
+                            <dd class="col-sm-8">
+                                @Html.DisplayFor(model => model.VouchedLeague)
+                            </dd>
+                            <dt class="col-sm-4">
+                                @Html.DisplayNameFor(model => model.SteamID)
+                            </dt>
+                            <dd class="col-sm-8">
+                                @Html.DisplayFor(model => model.SteamID)
+                            </dd>
+                            <dt class="col-sm-4">
+                                @Html.DisplayNameFor(model => model.TimeOutDateTime)
+                            </dt>
+                            <dd class="col-sm-8">
+                                @Html.DisplayFor(model => model.TimeOutDateTime)
+                            </dd>
+                            <dt class="col-sm-4">
+                                @Html.DisplayNameFor(model => model.IsBanned)
+                            </dt>
+                            <dd class="col-sm-8">
+                                @Html.DisplayFor(model => model.IsBanned)
+                            </dd>
+                            <dt class="col-sm-4">
+                                @Html.DisplayNameFor(model => model.Likes)
+                            </dt>
+                            <dd class="col-sm-8">
+                                @Html.DisplayFor(model => model.Likes)
+                            </dd>
+                            <dt class="col-sm-4">
+                                @Html.DisplayNameFor(model => model.Dislikes)
+                            </dt>
+                            <dd class="col-sm-8">
+                                @Html.DisplayFor(model => model.Dislikes)
+                            </dd>
+                            <dt class="col-sm-4">
+                                @Html.DisplayNameFor(model => model.Pos1PriorityValue)
+                            </dt>
+                            <dd class="col-sm-8">
+                                @Html.DisplayFor(model => model.Pos1PriorityValue)
+                            </dd>
+                            <dt class="col-sm-4">
+                                @Html.DisplayNameFor(model => model.Pos2PriorityValue)
+                            </dt>
+                            <dd class="col-sm-8">
+                                @Html.DisplayFor(model => model.Pos2PriorityValue)
+                            </dd>
+                            <dt class="col-sm-4">
+                                @Html.DisplayNameFor(model => model.Pos3PriorityValue)
+                            </dt>
+                            <dd class="col-sm-8">
+                                @Html.DisplayFor(model => model.Pos3PriorityValue)
+                            </dd>
+                            <dt class="col-sm-4">
+                                @Html.DisplayNameFor(model => model.Pos4PriorityValue)
+                            </dt>
+                            <dd class="col-sm-8">
+                                @Html.DisplayFor(model => model.Pos4PriorityValue)
+                            </dd>
+                            <dt class="col-sm-4">
+                                @Html.DisplayNameFor(model => model.Pos5PriorityValue)
+                            </dt>
+                            <dd class="col-sm-8">
+                                @Html.DisplayFor(model => model.Pos5PriorityValue)
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="card-footer text-center">
+                    @Html.ActionLink("Player settings", "AdminEdit", new { email = Model.Email }) |
+                    <a asp-action="Index">Back to List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

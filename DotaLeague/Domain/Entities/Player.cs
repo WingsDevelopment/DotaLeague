@@ -49,5 +49,37 @@ namespace DotaLeague.Domain.Entities
         {
             VouchedLeague = id;
         }
+
+        public void SetDisplayName(string displayName)
+        {
+            if (String.IsNullOrWhiteSpace(displayName))
+                throw new ArgumentNullException("Display name: can't be null!");
+
+            DisplayName = displayName;
+        }
+
+        public void SetSteamID(string steamID)
+        {
+            if (String.IsNullOrWhiteSpace(steamID))
+                throw new ArgumentNullException("SteamID: can't be null!");
+
+            SteamID = steamID;
+        }
+
+        public void SetTimeOutDateTime(DateTime timeOutDateTime)
+        {
+            TimeOutDateTime = timeOutDateTime;
+        }
+
+        public void SetPriorityValues(int pos1PriorityValue, 
+            int pos2PriorityValue, int pos3PriorityValue, 
+            int pos4PriorityValue, int pos5PriorityValue)
+        {
+            Pos1PriorityValue = pos1PriorityValue;
+            Pos2PriorityValue = pos2PriorityValue;
+            Pos3PriorityValue = pos3PriorityValue;
+            Pos4PriorityValue = pos4PriorityValue;
+            Pos5PriorityValue = pos5PriorityValue;
+        }
     }
 }

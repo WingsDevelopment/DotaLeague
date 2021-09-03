@@ -64,9 +64,8 @@ namespace DotaLeague.Controllers
             catch (Exception e)
             {
                 //todo: proper error handling
-                TempData["Error"] = e.Message;
                 _logger.LogError(e.Message);
-                return NotFound();
+                return BadRequest(e.Message);
             }
         }
 
@@ -87,9 +86,8 @@ namespace DotaLeague.Controllers
             catch (Exception e)
             {
                 //todo: proper error handling
-                TempData["Error"] = e.Message;
                 _logger.LogError(e.Message);
-                return NotFound();
+                return BadRequest(e.Message);
             }
         }
 

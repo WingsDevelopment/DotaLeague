@@ -36,6 +36,7 @@ namespace ApplicationServices.ApplicationDTOs
         {
             Id = player.Id;
             Email = player.Email;
+            DisplayName = player.DisplayName;
             RegisteredAt = player.RegisteredAt;
             SteamID = player.SteamID;
             TimeOutDateTime = player.TimeOutDateTime;
@@ -53,6 +54,13 @@ namespace ApplicationServices.ApplicationDTOs
 
             VouchedLeague = player.VouchedLeague;
             Reports = player.Reports?.ToReportDTOs()?.ToList();
+        }
+    }
+    public static class PlayerDTOExtension
+    {
+        public static List<PlayerDTO> ToPlayerDTOs(this ICollection<Player> players)
+        {
+            return players.Select(a => new PlayerDTO(a)).ToList();
         }
     }
 }

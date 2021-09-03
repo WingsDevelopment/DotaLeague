@@ -1,4 +1,5 @@
 ﻿using ApplicationServices.ApplicationDTOs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.SignalR;
 using System;
 using System.Collections.Generic;
@@ -7,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace DotaLeague.Hubs
 {
+    [Authorize]
     public class QueueHub : Hub<IQueueHub>
     {
         //public async Task UserQueued(PlayerShortDTO userShortDTO)

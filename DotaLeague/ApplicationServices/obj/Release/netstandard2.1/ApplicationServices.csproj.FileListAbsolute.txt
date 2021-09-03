@@ -1,0 +1,15 @@
+C:\Repos\DotaLeague\DotaLeague\ApplicationServices\bin\Release\netstandard2.1\ApplicationServices.deps.json
+C:\Repos\DotaLeague\DotaLeague\ApplicationServices\bin\Release\netstandard2.1\ApplicationServices.dll
+C:\Repos\DotaLeague\DotaLeague\ApplicationServices\bin\Release\netstandard2.1\ApplicationServices.pdb
+C:\Repos\DotaLeague\DotaLeague\ApplicationServices\bin\Release\netstandard2.1\Domain.dll
+C:\Repos\DotaLeague\DotaLeague\ApplicationServices\bin\Release\netstandard2.1\Utils.dll
+C:\Repos\DotaLeague\DotaLeague\ApplicationServices\bin\Release\netstandard2.1\Utils.pdb
+C:\Repos\DotaLeague\DotaLeague\ApplicationServices\bin\Release\netstandard2.1\Domain.pdb
+C:\Repos\DotaLeague\DotaLeague\ApplicationServices\obj\Release\netstandard2.1\ApplicationServices.csproj.AssemblyReference.cache
+C:\Repos\DotaLeague\DotaLeague\ApplicationServices\obj\Release\netstandard2.1\ApplicationServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\DotaLeague\DotaLeague\ApplicationServices\obj\Release\netstandard2.1\ApplicationServices.AssemblyInfoInputs.cache
+C:\Repos\DotaLeague\DotaLeague\ApplicationServices\obj\Release\netstandard2.1\ApplicationServices.AssemblyInfo.cs
+C:\Repos\DotaLeague\DotaLeague\ApplicationServices\obj\Release\netstandard2.1\ApplicationServices.csproj.CoreCompileInputs.cache
+C:\Repos\DotaLeague\DotaLeague\ApplicationServices\obj\Release\netstandard2.1\ApplicationServices.csproj.CopyComplete
+C:\Repos\DotaLeague\DotaLeague\ApplicationServices\obj\Release\netstandard2.1\ApplicationServices.dll
+C:\Repos\DotaLeague\DotaLeague\ApplicationServices\obj\Release\netstandard2.1\ApplicationServices.pdb
