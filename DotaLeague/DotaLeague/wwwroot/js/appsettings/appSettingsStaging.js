@@ -1,1 +1,1 @@
-﻿var NOTIFICATION_HOST = "https://proddomain/queueHub";
+﻿var NOTIFICATION_HOST = "http://balkan-dota-league.com/queueHub";

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\dotaleaguepub</_PublishTargetUrl>
+    <History>True|2021-09-03T13:46:55.0674619Z;False|2021-09-03T15:46:24.9406960+02:00;True|2021-09-03T15:41:40.2906742+02:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=localhost,1433%3bDatabase=DotaLeagueDB%3bUser ID=sa%3bPassword=SCH12345!%3bTrusted_Connection=true%3bIntegrated Security=false%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="SqlDataAccess.Contexts.SqlDotaLeagueContext">
+      <Value>Server=localhost,1433%3bDatabase=DotaLeagueDB%3bUser ID=sa%3bPassword=SCH12345!%3bTrusted_Connection=true%3bIntegrated Security=false%3b</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
