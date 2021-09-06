@@ -1,11 +1,12 @@
 ﻿using Domain.Entities;
+using Domain.Entities.MatchEntities;
 using DotaLeague.Domain.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DotaLeague.Domain.Entities
+namespace DotaLeague.Domain.Entities.MatchEntities
 {
     public class Match
     {
@@ -23,10 +24,9 @@ namespace DotaLeague.Domain.Entities
         /// </summary>
         public MatchState MatchState { get; private set; }
         /// <summary>
-        /// Data gethered from dota bot - used for match history
+        /// Match data
         /// </summary>
-        //public MatchData MatchData { get; set; }
-        //todo: add player ids
+        public List<MatchPlayerData> MatchPlayerData { get; private set; }
 
         public Match()
         {

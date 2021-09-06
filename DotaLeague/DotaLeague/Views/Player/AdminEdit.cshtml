@@ -1,4 +1,4 @@
-﻿@model ApplicationServices.ApplicationDTOs.PlayerDTO
+﻿@model DotaLeague.Models.PlayerViewModels.PlayerEditVM
 
 @{
     ViewData["Title"] = "Player settings";
@@ -23,9 +23,16 @@
                                     <span asp-validation-for="DisplayName" class="text-danger"></span>
                                 </div>
                                 <div class="form-group">
-                                    <label asp-for="VouchedLeague" class="control-label"></label>
-                                    <input asp-for="VouchedLeague" class="form-control" />
-                                    <span asp-validation-for="VouchedLeague" class="text-danger"></span>
+                                    <label class="control-label">Vouched league</label>
+                                    <br />
+                                    <select id="league-select" class="" asp-items="@Model.LeagueSelect" 
+                                            asp-for="VouchedLeague">
+                                        <option value="-1">Odaberi ligu</option>
+                                        @if (Model.VouchedLeagueDTO != null)
+                                        {
+                                            <option value="@(Model.VouchedLeagueDTO.Id)" selected hidden>@Model.VouchedLeagueDTO.Name</option>
+                                        }
+                                    </select>
                                 </div>
                                 <div class="form-group">
                                     <label asp-for="SteamID" class="control-label"></label>

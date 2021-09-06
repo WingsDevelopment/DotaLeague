@@ -123,7 +123,11 @@
                 </div>
 
                 <div class="card-footer text-center">
-                    @Html.ActionLink("Player settings", "AdminEdit", new { email = Model.Email }) |
+                    @if (User.IsInRole("Administrator"))
+                    {
+                        @Html.ActionLink("Player settings", "AdminEdit", new { email = Model.Email })
+                        <span>|</span>
+                    }
                     <a asp-action="Index">Back to List</a>
                 </div>
             </div>

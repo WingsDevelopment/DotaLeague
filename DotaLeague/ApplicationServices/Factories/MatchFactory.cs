@@ -1,6 +1,6 @@
 ﻿using ApplicationServices.Interfaces;
 using Domain.Entities;
-using DotaLeague.Domain.Entities;
+using DotaLeague.Domain.Entities.Match;
 using System;
 using System.Collections.Generic;
 using System.Text;

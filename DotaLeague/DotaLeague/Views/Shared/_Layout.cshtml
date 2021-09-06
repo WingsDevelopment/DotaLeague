@@ -11,6 +11,10 @@
     {
         data = HttpContextAccessor.HttpContext.Request.Cookies["data"];
     }
+    else
+    {
+        data = "blue";
+    }
 
     if (HttpContextAccessor.HttpContext.Request.Cookies["whiteContent"] != null)
     {

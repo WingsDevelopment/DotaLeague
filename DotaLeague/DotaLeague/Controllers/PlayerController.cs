@@ -17,11 +17,14 @@ namespace DotaLeague.Controllers
     {
         private readonly ILogger<PlayerController> _logger;
         private readonly IPlayerService _playerService;
+        private readonly ILeagueService _leagueService;
 
         public PlayerController(IPlayerService playerService,
-            ILogger<PlayerController> logger)
+            ILogger<PlayerController> logger,
+            ILeagueService leagueService)
         {
             _playerService = playerService;
+            _leagueService = leagueService;
             _logger = logger;
         }
 
@@ -81,8 +84,9 @@ namespace DotaLeague.Controllers
             try
             {
                 var playerDTO = await _playerService.GetPlayerByEmail(email);
+                var leagueDTOs = await _leagueService.GetAll();
 
-                return View(playerDTO);
+                return View(new PlayerEditVM(playerDTO, leagueDTOs));
             }
             catch (Exception e)
             {
@@ -96,10 +100,9 @@ namespace DotaLeague.Controllers
         [HttpPost]
         public async Task<IActionResult> AdminEdit(PlayerEditVM player)
         {
-            PlayerDTO playerDTO = null;
             try
             {
-                playerDTO = await _playerService.UpdatePlayer(
+                var playerDTO = await _playerService.UpdatePlayer(
                         player.Id,
                         player.DisplayName,
                         player.SteamID,
@@ -118,7 +121,7 @@ namespace DotaLeague.Controllers
             {
                 TempData["Error"] = e.Message;
                 _logger.LogError(e.Message);
-                return View(playerDTO);
+                return View(player);
             }
         }
     }
