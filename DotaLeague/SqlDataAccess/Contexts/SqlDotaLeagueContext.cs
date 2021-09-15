@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Domain.Entities;
+using DotaLeague.Domain.Entities.MatchEntities;
 
 namespace SqlDataAccess.Contexts
 {
